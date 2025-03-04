@@ -137,8 +137,32 @@ transition: 0.3s;
 footer>div>div:hover{
   transform: scale(1.1);
 }
+
 footer>p{
   font-weight:bold;
   color:var(--background);
   margin-top:50px;
 }
+
+
+.advisor-card {
+  transition: transform 0.3s;
+}
+
+.advisor-card:hover {
+  transform: scale(1.05);
+}
+
+.advisor-image {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+ 
+
+ 
+
+
+

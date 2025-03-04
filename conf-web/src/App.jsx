@@ -12,6 +12,8 @@ import About from './pages/about';
 import Register from './pages/register';
 
 
+
+
 import './App.css';
 
 export default function(){
@@ -29,7 +31,11 @@ export default function(){
       <Route path="/contact" element={<Contact/>}/>
       <Route path="/about" element={<About/>}/>
       </Routes>
+
     <Footer/>
+
+   
+
     </>
   )
 }
