@@ -1,7 +1,9 @@
+import Members from "../components/committee.jsx"
+
 export default function(){
     return(
         <div>
-commit
+<Members/>
         </div>
     )
 }
