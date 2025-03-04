@@ -5,9 +5,13 @@ export default function(){
 <h1>
 International Conference on Emerging Trends and Research in Computer & Electronics Exigencies - 2025
             </h1>
-            <h2>
+            <p>
 Organized by Department of Computer Science and Engineering & Artificial Intelligence and Data Science, KDKCE ,Nagpur.
-            </h2>
+            </p>
+            <div>
+                <button>Register</button>
+                <span>Learn more</span>
+            </div>
             </div>
 <h1>
 ETRCEE-25

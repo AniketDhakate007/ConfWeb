@@ -1,5 +1,6 @@
 import {Routes,Route} from 'react-router-dom';
 import Navbar from './components/navbar';
+import Footer from './components/footer';
 import Home from './pages/home';
 import Adv from './pages/advboard';
 import Commit from './pages/commit';
@@ -30,7 +31,11 @@ export default function(){
       <Route path="/contact" element={<Contact/>}/>
       <Route path="/about" element={<About/>}/>
       </Routes>
+
+    <Footer/>
+
    
+
     </>
   )
 }
