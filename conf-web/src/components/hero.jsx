@@ -8,7 +8,7 @@ International Conference on Emerging Trends and Research in Computer & Electroni
             <p>
 Organized by Department of Computer Science and Engineering & Artificial Intelligence and Data Science, KDKCE ,Nagpur.
             </p>
-            <div>
+            <div className="flexbox hero-button">
                 <button>Register</button>
                 <span>Learn more</span>
             </div>
