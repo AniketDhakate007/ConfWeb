@@ -1,7 +1,9 @@
+import CallForPapers from "../components/call-for-papers";
+
 export default function(){
     return(
         <div>
-authors
+<CallForPapers/>
         </div>
     )
 }

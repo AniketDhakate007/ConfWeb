@@ -9,7 +9,7 @@ export default function(){
             <Link to="/advboard">Advisory Board</Link>
             <Link to="/commitee">Committees</Link>
             <Link to="/kspeaker">Keynote Speakers</Link>
-            <Link to="/authors">For Authors</Link>
+            <Link to="/authors">Call for Papers</Link>
             <Link to="/register">Registration</Link>
             <Link to="/program">Programme Schedule</Link>
             </div>
