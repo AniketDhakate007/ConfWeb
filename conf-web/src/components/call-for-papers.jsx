@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 const callForPapers = [
   {
     title: 'Artificial Intelligence',
-    description: 'Explore cutting-edge AI technologies, including machine learning, neural networks, and natural language processing.',
+    description: 'Explore cutting-edge AI technologies, including machine learning, neural networks, and natural language processing. Submit your research today!Explore cutting-edge AI technologies, including machine learning, neural networks, and natural language processing.',
     deadline: 'Submission Deadline: March 30, 2025'
   },
   {
