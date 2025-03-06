@@ -1,0 +1,9 @@
+#root {
+  --background: #efe9f4;
+  --font: #171d1c;
+  --button: #5863f8;
+  --hover: #5fbff9;
+  --seperator: #16bac5;
+  background: var(--background);
+  min-height: 100vh;
+}

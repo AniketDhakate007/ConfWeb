@@ -1,14 +1,24 @@
-@import "tailwindcss";
-
-#root{
-  --background:#efe9f4;
-  --font:#171d1c;
-  --button:#5863f8;
-  --hover:#5fbff9;
-  --seperator:#16bac5;
-  background:var(--background);
-min-height: 100vh;
+/* #root {
+  --background: #efe9f4;
+  --font: #171d1c;
+  --button: #5863f8;
+  --hover: #5fbff9;
+  --seperator: #16bac5;
+  background: var(--background);
+  min-height: 100vh;
+} */
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: var(--font);
+} */
+.flexbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+<<<<<<< Updated upstream
 *{
   margin:0;
   padding:0;
@@ -26,23 +36,27 @@ align-items: center;
 }
 .flexbox-column{
   display:flex;
+=======
+.flexbox-column {
+  display: flex;
+>>>>>>> Stashed changes
   flex-direction: column;
 }
-.flexbox-spacearound{
-  display:flex;
+.flexbox-spacearound {
+  display: flex;
   justify-content: space-around;
   align-items: center;
 }
-button{
-  border:none;
-  background:var(--font);
-  color:var(--background);
-  padding:0.5rem 1rem;
-border:2px solid var(--font);
+button {
+  border: none;
+  background: var(--font);
+  color: var(--background);
+  padding: 0.5rem 1rem;
+  border: 2px solid var(--font);
 }
-button:hover{
-  background:var(--background);
-  color:var(--font);
+button:hover {
+  background: var(--background);
+  color: var(--font);
 }
 .navbar a {
   text-decoration: none;
@@ -50,6 +64,7 @@ button:hover{
   border-radius: 10px;
   border: 2px solid transparent;
 }
+<<<<<<< Updated upstream
 
 .navbar {
   background: linear-gradient(to right, var(--seperator), var(--background), var(--hover));
@@ -109,25 +124,73 @@ button:hover{
   border:3px solid var(--hover);
   border-radius:10px; 
   gap:50px;
+=======
+.navbar {
+  background: linear-gradient(
+    to right,
+    var(--seperator),
+    var(--background),
+    var(--hover)
+  );
+  padding: 0.4rem;
+  justify-content: space-between;
 }
-.hero>h1{
-  width:50%;
+.navbar a:hover {
+  background-color: rgb(255, 255, 255, 0.4);
+  border: 2px solid var(--hover);
+}
+.nav-one {
+  width: 70%;
+}
+.nav-two {
+  width: 15%;
+}
+.hero {
+  height: 90vh;
+  background: linear-gradient(
+    to left,
+    var(--background),
+    var(--button),
+    var(--hover)
+  );
+  padding: 1rem;
+}
+.hero > div {
+  width: 50%;
+  padding: 1rem;
+  height: 80%;
+  background-color: rgb(255, 255, 255, 0.2);
+  border: 3px solid var(--hover);
+  border-radius: 10px;
+  gap: 50px;
+>>>>>>> Stashed changes
+}
+.hero > h1 {
+  width: 50%;
   text-align: center;
 }
-.hero>div>h1{
-text-align: center;
+.hero > div > h1 {
+  text-align: center;
 }
-.hero>div>div{
-width:100%;
+.hero > div > div {
+  width: 100%;
 }
+<<<<<<< Updated upstream
 .hero>div>div>span{
 border:2px solid var(--font);
 padding:0.4rem 1rem;
+=======
+.hero > div > div > span {
+  margin-left: 20px;
+  border: 2px solid var(--font);
+  padding: 0.4rem 1rem;
+>>>>>>> Stashed changes
 }
-.hero>div>div>span:hover{
-background:var(--font);
-color:var(--background);
+.hero > div > div > span:hover {
+  background: var(--font);
+  color: var(--background);
 }
+<<<<<<< Updated upstream
   .hero-button{
   flex-wrap: wrap;
   gap:20px;
@@ -144,34 +207,41 @@ border:2px solid green;
 }
 .home-first h1,.home-first p{
   width:40%;
+=======
+.home-first {
+  padding: 2rem;
+  margin: 50px;
+  gap: 100px;
+>>>>>>> Stashed changes
 }
-.home-sponser>h1{
-text-align: center;
-margin:50px;
+.home-sponser > h1 {
+  text-align: center;
+  margin: 50px;
 }
-.home-sponser>div{
-  flex-wrap:wrap;
-  width:100%;
-  padding:1rem;
-  gap:50px;
-  background:linear-gradient(to top ,var(--seperator),var(--button));
+.home-sponser > div {
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 1rem;
+  gap: 50px;
+  background: linear-gradient(to top, var(--seperator), var(--button));
 }
-  
-.home-sponser>div>div{
-  background:rgb(255,255,255,0.32);
-  padding:1rem;
-  border:2px solid var(--button);
+
+.home-sponser > div > div {
+  background: rgb(255, 255, 255, 0.32);
+  padding: 1rem;
+  border: 2px solid var(--button);
   border-radius: 10px;
 }
-  .home-sponser>div img{
+.home-sponser > div img {
   min-width: 260px;
 }
-footer{
-  background: linear-gradient(to bottom,var(--seperator),var(--button));
-  border-top:2px solid var(--hover);
-  padding:1rem;
-  margin-top:50vh;
+footer {
+  background: linear-gradient(to bottom, var(--seperator), var(--button));
+  border-top: 2px solid var(--hover);
+  padding: 1rem;
+  margin-top: 50vh;
 }
+<<<<<<< Updated upstream
 footer>div{
   width:100%;
   gap:10px;
@@ -184,17 +254,27 @@ background:rgb(255,255,255,0.4);
 border:2px solid var(--button);
 border-radius: 10px;
 transition: 0.3s;
+=======
+footer > div {
+  width: 100%;
 }
-footer>div>div:hover{
+footer > div > div {
+  padding: 1rem;
+  background: rgb(255, 255, 255, 0.4);
+  border: 2px solid var(--button);
+  border-radius: 10px;
+  transition: 0.3s;
+>>>>>>> Stashed changes
+}
+footer > div > div:hover {
   transform: scale(1.1);
 }
 
-footer>p{
-  font-weight:bold;
-  color:var(--background);
-  margin-top:50px;
+footer > p {
+  font-weight: bold;
+  color: var(--background);
+  margin-top: 50px;
 }
-
 
 .advisor-card {
   transition: transform 0.3s;
@@ -211,6 +291,7 @@ footer>p{
   object-fit: cover;
   margin-bottom: 15px;
 }
+<<<<<<< Updated upstream
  
 /* Responsive Styles */
 @media (max-width: 768px) {
@@ -255,3 +336,5 @@ footer>p{
   }
 
 }
+=======
+>>>>>>> Stashed changes
