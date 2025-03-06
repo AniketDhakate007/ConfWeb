@@ -18,28 +18,23 @@
   justify-content: center;
   align-items: center;
 }
-<<<<<<< Updated upstream
-*{
+/* *{
   margin:0;
   padding:0;
   box-sizing:border-box;
   color:var(--font);
+} */
+h1 {
+  font-size: 2rem;
+  font-weight: bold;
 }
-h1{
-  font-size:2rem;
-  font-weight:bold;
+.flexbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.flexbox{
-display:flex;
-justify-content: center;
-align-items: center;
-}
-.flexbox-column{
-  display:flex;
-=======
 .flexbox-column {
   display: flex;
->>>>>>> Stashed changes
   flex-direction: column;
 }
 .flexbox-spacearound {
@@ -64,13 +59,17 @@ button:hover {
   border-radius: 10px;
   border: 2px solid transparent;
 }
-<<<<<<< Updated upstream
 
 .navbar {
-  background: linear-gradient(to right, var(--seperator), var(--background), var(--hover));
+  background: linear-gradient(
+    to right,
+    var(--seperator),
+    var(--background),
+    var(--hover)
+  );
   padding: 0.4rem;
-  position:relative;
-  z-index:10;
+  position: relative;
+  z-index: 10;
   justify-content: space-between;
   display: flex;
   align-items: center;
@@ -109,44 +108,7 @@ button:hover {
   color: var(--font);
 }
 
-
-.hero{
-  background: linear-gradient(to left,var(--background),var(--button),var(--hover));
-  padding:1rem;
-  flex-wrap: wrap;
-  min-height:100vh;
-}
-.hero>div{
-  width:50%;
-  padding:1rem;
-  min-width: 300px;
-  background-color:rgb(255,255,255,0.2);
-  border:3px solid var(--hover);
-  border-radius:10px; 
-  gap:50px;
-=======
-.navbar {
-  background: linear-gradient(
-    to right,
-    var(--seperator),
-    var(--background),
-    var(--hover)
-  );
-  padding: 0.4rem;
-  justify-content: space-between;
-}
-.navbar a:hover {
-  background-color: rgb(255, 255, 255, 0.4);
-  border: 2px solid var(--hover);
-}
-.nav-one {
-  width: 70%;
-}
-.nav-two {
-  width: 15%;
-}
 .hero {
-  height: 90vh;
   background: linear-gradient(
     to left,
     var(--background),
@@ -154,16 +116,17 @@ button:hover {
     var(--hover)
   );
   padding: 1rem;
+  flex-wrap: wrap;
+  min-height: 100vh;
 }
 .hero > div {
   width: 50%;
   padding: 1rem;
-  height: 80%;
+  min-width: 300px;
   background-color: rgb(255, 255, 255, 0.2);
   border: 3px solid var(--hover);
   border-radius: 10px;
   gap: 50px;
->>>>>>> Stashed changes
 }
 .hero > h1 {
   width: 50%;
@@ -175,44 +138,31 @@ button:hover {
 .hero > div > div {
   width: 100%;
 }
-<<<<<<< Updated upstream
-.hero>div>div>span{
-border:2px solid var(--font);
-padding:0.4rem 1rem;
-=======
 .hero > div > div > span {
-  margin-left: 20px;
   border: 2px solid var(--font);
   padding: 0.4rem 1rem;
->>>>>>> Stashed changes
 }
 .hero > div > div > span:hover {
   background: var(--font);
   color: var(--background);
 }
-<<<<<<< Updated upstream
-  .hero-button{
+.hero-button {
   flex-wrap: wrap;
-  gap:20px;
+  gap: 20px;
 }
-.home{
-  width:100%;
+.home {
+  width: 100%;
 }
-.home-first{
-  padding:2rem;
-margin:50px;
-border:2px solid green;
-  gap:100px;
-  flex-wrap: wrap;
-}
-.home-first h1,.home-first p{
-  width:40%;
-=======
 .home-first {
   padding: 2rem;
   margin: 50px;
+  border: 2px solid green;
   gap: 100px;
->>>>>>> Stashed changes
+  flex-wrap: wrap;
+}
+.home-first h1,
+.home-first p {
+  width: 40%;
 }
 .home-sponser > h1 {
   text-align: center;
@@ -241,30 +191,18 @@ footer {
   padding: 1rem;
   margin-top: 50vh;
 }
-<<<<<<< Updated upstream
-footer>div{
-  width:100%;
-  gap:10px;
-  flex-wrap: wrap;
-}
-footer>div>div{
-padding:1rem;
-min-width:100px;
-background:rgb(255,255,255,0.4);
-border:2px solid var(--button);
-border-radius: 10px;
-transition: 0.3s;
-=======
 footer > div {
   width: 100%;
+  gap: 10px;
+  flex-wrap: wrap;
 }
 footer > div > div {
   padding: 1rem;
+  min-width: 100px;
   background: rgb(255, 255, 255, 0.4);
   border: 2px solid var(--button);
   border-radius: 10px;
   transition: 0.3s;
->>>>>>> Stashed changes
 }
 footer > div > div:hover {
   transform: scale(1.1);
@@ -291,8 +229,7 @@ footer > p {
   object-fit: cover;
   margin-bottom: 15px;
 }
-<<<<<<< Updated upstream
- 
+
 /* Responsive Styles */
 @media (max-width: 768px) {
   .menu-button {
@@ -311,30 +248,29 @@ footer > p {
     padding: 1rem;
     text-align: center;
   }
-  .nav-two{
-    top:450px;
-    padding-top:0;
+  .nav-two {
+    top: 450px;
+    padding-top: 0;
   }
 
   .nav-open {
     display: flex;
   }
-  h1{
-    font-size:1.2rem;
+  h1 {
+    font-size: 1.2rem;
   }
 
-  .hero-button button, .hero-button span{
-  width:80%;
+  .hero-button button,
+  .hero-button span {
+    width: 80%;
   }
 
-.home-first h1,.home-first p{
-  width:90%;
+  .home-first h1,
+  .home-first p {
+    width: 90%;
+  }
+  .home-first {
+    padding: 0;
+    margin: 10px;
+  }
 }
-  .home-first{
-    padding:0 ;
-    margin:10px;
-  }
-
-}
-=======
->>>>>>> Stashed changes

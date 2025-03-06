@@ -12,6 +12,7 @@ import About from "./pages/about";
 import Register from "./pages/register";
 import CallForPapers from "./pages/call_for_papers";
 
+import "./pages/call_for_papers.css";
 import "./App.css";
 
 export default function () {

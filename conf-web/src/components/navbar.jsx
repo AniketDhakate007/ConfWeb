@@ -1,11 +1,8 @@
-<<<<<<< Updated upstream
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { Menu, X } from "lucide-react";
-=======
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import "./navbar.css";
->>>>>>> Stashed changes
 
 export default function () {
   return (
