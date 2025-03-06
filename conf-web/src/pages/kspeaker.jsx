@@ -1,51 +1,63 @@
 import React from "react";
+import { motion } from "framer-motion";
+import "./kspeaker.css";
 
 const speakers = [
   {
-    photo: "https://avatar.iran.liara.run/public/boy?username=Ash",
-    name: "Speaker One",
-    university: "University A",
-    topic: "Topic A",
-    description: "Description A",
+    name: "Dr. John Doe",
+    university: "Harvard University",
+    topic: "Artificial Intelligence",
+    image: "https://via.placeholder.com/200",
   },
   {
-    photo: "https://avatar.iran.liara.run/public/boy?username=Ash",
-    name: "Speaker Two",
-    university: "University B",
-    topic: "Topic B",
-    description: "Description B",
+    name: "Dr. Jane Smith",
+    university: "Stanford University",
+    topic: "Quantum Computing",
+    image: "https://via.placeholder.com/200",
   },
   // Add more speakers as needed
 ];
 
-export default function KeynoteSpeakers() {
+const KSpeaker = () => {
   return (
-    <div className="bg-purple-100 p-8">
-      <h1 className="text-4xl text-purple-800 font-bold mb-8">
-        Keynote Speakers
-      </h1>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+    <div className="bg-purple-600 min-h-screen text-white p-6 flex flex-col items-center">
+      <nav className="bg-purple-800 p-6 shadow-md w-full">
+        <h1 className="text-center text-4xl font-bold text-white">
+          Conference Speakers
+        </h1>
+      </nav>
+      <div className="max-w-4xl w-full flex flex-col items-center mt-12 space-y-12">
         {speakers.map((speaker, index) => (
-          <div
+          <motion.div
             key={index}
-            className="bg-white p-6 rounded-lg shadow-lg transform transition duration-500 hover:scale-105"
+            className="flex items-center gap-8 p-8 rounded-lg shadow-lg w-full max-w-lg backdrop-blur-md bg-purple-500 bg-opacity-30 border border-purple-300"
+            initial={{ opacity: 0, y: 50 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: index * 0.2 }}
           >
             <img
-              src={speaker.photo}
+              src={speaker.image}
               alt={speaker.name}
-              className="w-full h-48 object-cover rounded-t-lg"
+              className="w-36 h-36 rounded-full object-cover border-4 border-purple-400 shadow-lg"
             />
-            <div className="p-4">
-              <h2 className="text-2xl text-purple-700 font-semibold">
+            <div>
+              <h2 className="text-2xl font-semibold text-white">
                 {speaker.name}
               </h2>
-              <p className="text-purple-600">{speaker.university}</p>
-              <p className="text-purple-500">{speaker.topic}</p>
-              <p className="text-gray-700 mt-2">{speaker.description}</p>
+              <p className="text-gray-200 text-lg">{speaker.university}</p>
+              <p className="font-medium text-white text-lg">
+                Topic: {speaker.topic}
+              </p>
+              <p className="text-gray-300 mt-3 text-base">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
+                quam velit.
+              </p>
             </div>
-          </div>
+          </motion.div>
         ))}
       </div>
     </div>
   );
-}
+};
+
+export default KSpeaker;
