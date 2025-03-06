@@ -1,104 +1,106 @@
 import React from 'react';
-import { Container, Grid, Box, Typography } from '@mui/material';
+import { Container, Box, Typography, Grid } from '@mui/material';
 import { motion } from 'framer-motion';
-import '@fontsource/poppins';
-import '@fontsource/montserrat';
 
-import Ghost from '../assets/G.jpeg';
-import Price from '../assets/P.jpeg';
-import Soap from '../assets/S.jpeg';
-
-const mainChairPersons = [
-  { name: 'Dr. John Doe', title: 'Chief AI Scientist', image: Ghost},
-  { name: 'Dr. John Doe', title: 'Chief AI Scientist', image: Soap},
-  { name: 'Dr. Jane Smith', title: 'Data Scientist', image: Price },
-  { name: 'Dr. Jane Smith', title: 'Data Scientist', image: Price },
-  { name: 'Dr. Jane Smith', title: 'Data Scientist', image: Price }
-];
-
-const nationalBoard = [
-  { name: 'Dr. Alan Turing', title: 'Mathematician', image: Ghost },
-  { name: 'Dr. Grace Hopper', title: 'Computer Scientist', image: Soap }
-];
-
-const localAdvisors = [
-  { name: 'Dr. Ada Lovelace', title: 'Programmer', image: Soap },
-  { name: 'Dr. Claude Shannon', title: 'Information Theorist', image: Ghost }
+const advisoryBoard = [
+  { name: 'Dr. John Doe', title: 'Chairperson' },
+  { name: 'Prof. Jane Smith', title: 'Co-Chairperson' },
+  { name: 'Dr. Emily White', title: 'National Board Member' },
+  { name: 'Prof. Mark Taylor', title: 'National Board Member' },
+  { name: 'Dr. Sarah Green', title: 'Local Advisor' },
+  { name: 'Prof. David Brown', title: 'Local Advisor' },
+  { name: 'Dr. John Doe', title: 'Chairperson' },
+  { name: 'Prof. Jane Smith', title: 'Co-Chairperson' },
+  { name: 'Dr. Emily White', title: 'National Board Member' },
+  { name: 'Prof. Mark Taylor', title: 'National Board Member' },
+  { name: 'Dr. Sarah Green', title: 'Local Advisor' },
+  { name: 'Prof. David Brown', title: 'Local Advisor' },
+  { name: 'Dr. John Doe', title: 'Chairperson' },
+  { name: 'Prof. Jane Smith', title: 'Co-Chairperson' },
+  { name: 'Dr. Emily White', title: 'National Board Member' },
+  { name: 'Prof. Mark Taylor', title: 'National Board Member' },
+  { name: 'Dr. Sarah Green', title: 'Local Advisor' },
+  { name: 'Prof. David Brown', title: 'Local Advisor' }
 ];
 
 const AdvisoryBoard = () => {
-  const renderAdvisors = (advisors) => advisors.map((advisor, index) => (
-    <Grid item xs={12} sm={6} md={3} key={index}>
-      <motion.div
-        whileHover={{ scale: 1.1 }}
-        initial={{ opacity: 0, y: 50 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.3, delay: index * 0.1, ease: 'easeOut' }}
-      >
-        <Box sx={{
-          backgroundColor: 'transparent',
-          borderRadius: '15px',
-          overflow: 'hidden',
-          boxShadow: '0px 10px 25px rgba(0,0,0,0.3)',
-          textAlign: 'center',
-          width: '100%',
-          margin: '0 auto',
-          position: 'relative',
-          paddingBottom: '1rem'
-        }}>
-          <img src={advisor.image} alt={advisor.name} style={{ width: '100%', height: 'auto', objectFit: 'cover', borderRadius: '15px' }} />
-          <Box sx={{
-            padding: '1rem',
-            textAlign: 'center'
-          }}>
-            <Typography variant="h6" sx={{ fontWeight: 'bold', fontSize: '1.3rem', color: '#fff', fontFamily: 'Poppins' }}>
-              {advisor.name}
-            </Typography>
-            <Typography variant="subtitle2" sx={{ fontSize: '1.1rem', color: '#ddd', fontFamily: 'Montserrat' }}>
-              {advisor.title}
-            </Typography>
-          </Box>
-        </Box>
-      </motion.div>
-    </Grid>
-  ));
-
   return (
-    <div style={{
-      background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
-      minHeight: '100vh',
-      padding: '2rem',
-      overflowY: 'auto',
-      backgroundAttachment: 'fixed'
-    }}>
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      transition={{ duration: 1 }}
+      style={{
+        background: 'linear-gradient(135deg, #32a852, #4285f4)',
+        minHeight: '100vh',
+        padding: '4rem 2rem',
+        color: '#fff',
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'flex-start'
+      }}
+    >
       <Container maxWidth="lg">
-        <Typography variant="h3" align="center" gutterBottom sx={{ margin: '2rem 0', fontWeight: 'bold', color: '#fff', fontFamily: 'Poppins' }}>
+        <Typography variant="h2" align="center" gutterBottom sx={{
+          marginBottom: '3rem',
+          fontWeight: '900',
+          fontFamily: 'Poppins',
+          letterSpacing: '3px',
+          textShadow: '3px 3px 8px rgba(0,0,0,0.6)',
+          textTransform: 'uppercase'
+        }}>
           Advisory Board
         </Typography>
-
-        <Typography variant="h4" align="center" sx={{ margin: '1rem 0', fontWeight: 'bold', color: '#fff', fontFamily: 'Montserrat' }}>
-          Main Chair Persons
-        </Typography>
         <Grid container spacing={2} justifyContent="center">
-          {renderAdvisors(mainChairPersons)}
-        </Grid>
-
-        <Typography variant="h4" align="center" sx={{ margin: '2rem 0', fontWeight: 'bold', color: '#fff', fontFamily: 'Montserrat' }}>
-          National Board
-        </Typography>
-        <Grid container spacing={2} justifyContent="center">
-          {renderAdvisors(nationalBoard)}
-        </Grid>
-
-        <Typography variant="h4" align="center" sx={{ margin: '2rem 0', fontWeight: 'bold', color: '#fff', fontFamily: 'Montserrat' }}>
-          Local Advisors
-        </Typography>
-        <Grid container spacing={2} justifyContent="center">
-          {renderAdvisors(localAdvisors)}
+          {advisoryBoard.map((person, index) => (
+            <Grid item xs={12} sm={6} md={3} key={index}>
+              <motion.div
+                whileHover={{ scale: 1.1 }}
+                initial={{ opacity: 0, y: 50 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: index * 0.1 }}
+              >
+                <Box sx={{
+                  background: 'rgba(255, 255, 255, 0.15)',
+                  backdropFilter: 'blur(15px)',
+                  borderRadius: '20px',
+                  padding: '1.5rem',
+                  textAlign: 'center',
+                  boxShadow: '0px 15px 25px rgba(0,0,0,0.4)',
+                  border: '2px solid rgba(255, 255, 255, 0.5)',
+                  cursor: 'pointer',
+                  transition: 'all 0.3s ease-in-out',
+                  marginBottom: '1.5rem',
+                  height: '150px',
+                  display: 'flex',
+                  flexDirection: 'column',
+                  justifyContent: 'center'
+                }}>
+                  <Typography variant="h5" sx={{
+                    fontWeight: '800',
+                    fontFamily: 'Montserrat',
+                    marginBottom: '0.5rem',
+                    color: '#fff',
+                    letterSpacing: '1px'
+                  }}>
+                    {person.name}
+                  </Typography>
+                  <Typography variant="subtitle1" sx={{
+                    fontWeight: '700',
+                    fontFamily: 'Poppins',
+                    color: '#ffeb3b',
+                    fontSize: '1rem'
+                  }}>
+                    {person.title}
+                  </Typography>
+                </Box>
+              </motion.div>
+            </Grid>
+          ))}
         </Grid>
       </Container>
-    </div>
+    </motion.div>
   );
-};  
+};
 
 export default AdvisoryBoard;
