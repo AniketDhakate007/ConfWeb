@@ -329,7 +329,7 @@ import '../pages/call_for_papers.css';
     },
   ];
 
-  const CallForPapers = () => {
+  const Theme = () => {
     return (
       <div style={{
         background: 'linear-gradient(135deg, #32a852, #4285f4)',
@@ -339,8 +339,7 @@ import '../pages/call_for_papers.css';
         alignItems: 'center',
         padding: '4rem 2rem'
       }}>
-        <h1 style={{ color: '#fff', fontSize: '3rem', marginBottom: '2rem', fontFamily: 'Montserrat' }}>Call for Papers</h1>
-        <div style={{ color: '#fff', fontSize: '1.5rem', marginBottom: '5rem', fontFamily: 'Montserrat', align:'center' }}>Research Papers are invited from faculties, Research Scholars, Scientist, Student, Industry personnel, and Practitioners working in varied areas of Computer Science & Engineering, Information Technology, Emerging Technologies, Electronics, Telecommunication and all allied branches.</div>
+        <h1 style={{ color: '#fff', fontSize: '3rem', marginBottom: '2rem', fontFamily: 'Montserrat' }}>Theme & Scope</h1>
         <div style={{
           display: 'grid',
           gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))',
@@ -348,7 +347,6 @@ import '../pages/call_for_papers.css';
           width: '100%',
           maxWidth: '1500px'
         }}>
-          
           {topics.map((topic, index) => (
             <motion.div
               key={index}
@@ -372,5 +370,5 @@ import '../pages/call_for_papers.css';
     );
   };
   
-  export default CallForPapers;
+  export default Theme;
   

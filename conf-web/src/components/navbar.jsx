@@ -1,5 +1,7 @@
 import { Link } from "react-router-dom";
 
+
+
 export default function () {
   return (
 
@@ -11,6 +13,7 @@ export default function () {
           <Link to="/">Home</Link>
           <Link to="/advboard">Advisory Board</Link>
           <Link to="/commitee">Committees</Link>
+
           <Link to="/kspeaker">Keynote Speakers</Link>
           <div className="dropdown"><span>For Authors</span>
           <div>
@@ -20,18 +23,21 @@ export default function () {
 <Link to="/">Paper Submission</Link>
           </div>
           </div>
+
           <Link to="/register">Registration</Link>
           <Link to="/program">Programme Schedule</Link>
         </div>
 
         <div className='nav-two'>
           <Link to="/contact">Contact Us</Link>
+
           <div className="dropdown"><span>About</span>
           <div>
 <Link to="/about">About College</Link>
 <Link to="/Theme-scope">Theme and Scope</Link>
           </div>
           </div>
+
         </div>
 
       </div>
