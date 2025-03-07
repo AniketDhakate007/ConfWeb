@@ -14,6 +14,7 @@ import CallForPapers from "./pages/call_for_papers";
 
 import "./pages/call_for_papers.css";
 import "./App.css";
+import ThemeScope from "./pages/Theme-scope";
 
 export default function () {
   return (
@@ -30,6 +31,7 @@ export default function () {
         <Route path="/program" element={<Program />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/about" element={<About />} />
+        <Route path="/Theme-scope" element={<ThemeScope />} />
       </Routes>
 
       <Footer />

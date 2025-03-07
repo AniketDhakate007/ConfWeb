@@ -144,7 +144,7 @@ const AdvisoryBoard = () => {
         <Typography variant="h2" align="center" gutterBottom sx={{
           marginTop: '4rem',
           marginBottom: '3rem',
-          fontWeight: '900',
+          fontWeight: '500',
           fontFamily: 'Poppins',
           letterSpacing: '3px',
           textShadow: '3px 3px 8px rgba(0,0,0,0.6)',

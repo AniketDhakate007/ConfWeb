@@ -1,12 +1,13 @@
 import React from 'react';
-import CallForPapers from '../components/call-for-papers';
+
+import Theme from '../components/Theme';
 
 
 export default function(){
     return(
         <div>
          
-<CallForPapers/>
+<Theme/>
         </div>
     )
 }
