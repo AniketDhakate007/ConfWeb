@@ -1,104 +1,140 @@
 import React from 'react';
-import { Container, Grid, Box, Typography } from '@mui/material';
+import { Container, Box, Typography, Grid } from '@mui/material';
 import { motion } from 'framer-motion';
-import '@fontsource/poppins';
-import '@fontsource/montserrat';
 
-import Ghost from '../assets/G.jpeg';
-import Price from '../assets/P.jpeg';
-import Soap from '../assets/S.jpeg';
+const committees = {
+  'Chief Patron': [
+    { name: 'Mrs. Sumanmala B. Mulak', title: 'Chairperson, BCYRC, Nagpur' }
+  ],
+  'Patrons': [
+    { name: 'Mr. Rajendra B. Mulak', title:'BCYRC, Ex- Minister, Govt of Maharashtra' },
+    { name: 'Mr. Yashraj R. Mulak', title: 'Treasurer, BCYRC' },
+    { name: 'Dr. V. P. Varghese', title: 'Principal, KDK College of Engineering, Nagpur' },
+    { name: 'Dr. J.W. Bakal', title: 'President, IETE, New Delhi' }
+  ],
+  'Conference Chair': [
+    { name: 'Dr. A. M. Badar', title: 'Vice- Principal, KDK College of Engineering. Nagpur.' }
+  ],
+  'Co-Conference Chair': [
+    { name: 'Dr. A.A. Jaiswal', title: 'Professor & Head, Department of Computer Science & Engineering, KDKCE' },
+    { name: 'Dr. S. M. Malode', title: 'Head, Department of Artificial Intelligence & Data Science, KDKCE' },
+    { name: 'Dr. R.L. Shrivastav', title: 'Chairman, Institution of Engineers (I) Nagpur Local Centre' },
+    { name: 'Dr. B.P. Joshi', title: 'President, IETE Nagpur Local Chapter' }
+  ],
+  'Convener': [
+    { name: 'Prof. A. M. Kuthe ', title: 'Asst. Professor, Department of Computer Science & Engg. KDKCE ' },
+    { name: 'Dr. K. S. Chandwani', title: 'Asst. Professor, Department of Computer Science & Engg. KDKCE' }
 
-const mainChairPersons = [
-  { name: 'Dr. John Doe', title: 'Chief AI Scientist', image: Ghost},
-  { name: 'Dr. John Doe', title: 'Chief AI Scientist', image: Soap},
-  { name: 'Dr. Jane Smith', title: 'Data Scientist', image: Price },
-  { name: 'Dr. Jane Smith', title: 'Data Scientist', image: Price },
-  { name: 'Dr. Jane Smith', title: 'Data Scientist', image: Price }
-];
 
-const nationalBoard = [
-  { name: 'Dr. Alan Turing', title: 'Mathematician', image: Ghost },
-  { name: 'Dr. Grace Hopper', title: 'Computer Scientist', image: Soap }
-];
+  ],
+  'Co-Convener': [
+    { name: 'Prof K.Ingole', title: 'Asst. Professor, Department of Artificial Intelligence & Data Science, KDKCE' },
+    { name: 'Prof. A. Nachankar', title: 'Asst. Professor, Department of Computer Science & Engg. KDKCE' }
+  ],
 
-const localAdvisors = [
-  { name: 'Dr. Ada Lovelace', title: 'Programmer', image: Soap },
-  { name: 'Dr. Claude Shannon', title: 'Information Theorist', image: Ghost }
-];
+  'Secretary': [
+    { name: 'Prof. V. Surjuse', title: 'Asst. Professor, Department of Computer Science & Engg. KDKCE' },
+    { name: 'Dr. A. Bhange', title: 'Head, Department of Computer Application, KDKCE' },
+    { name: 'Prof. S. Kurzadkar', title: 'Asst. Professor, Department of Computer Science & Engg. KDKCE' }
+  ],
+  'Joint Organizing Secretary': [
+     { name: 'Prof. M. Choudhari', title: 'Asst.Professor, Department of Artificial Intelligence & Data Science, KDKCE' },
+    { name: 'Prof. P. Singam', title: 'Asst. Professor, Department of Computer Science & Engg. KDKCE' },
+    { name: 'Prof. Chole', title: 'Asst.Professor, Department of Artificial Intelligence & Data Science, KDKCE' }
+  ]
 
-const Members = () => {
-  const renderAdvisors = (advisors) => advisors.map((advisor, index) => (
-    <Grid item xs={12} sm={6} md={3} key={index}>
-      <motion.div
-        whileHover={{ scale: 1.1 }}
-        initial={{ opacity: 0, y: 50 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.3, delay: index * 0.1, ease: 'easeOut' }}
-      >
-        <Box sx={{
-          backgroundColor: 'transparent',
-          borderRadius: '15px',
-          overflow: 'hidden',
-          boxShadow: '0px 10px 25px rgba(0,0,0,0.3)',
-          textAlign: 'center',
-          width: '100%',
-          margin: '0 auto',
-          position: 'relative',
-          paddingBottom: '1rem'
-        }}>
-          <img src={advisor.image} alt={advisor.name} style={{ width: '100%', height: 'auto', objectFit: 'cover', borderRadius: '15px' }} />
-          <Box sx={{
-            padding: '1rem',
-            textAlign: 'center'
-          }}>
-            <Typography variant="h6" sx={{ fontWeight: 'bold', fontSize: '1.3rem', color: '#fff', fontFamily: 'Poppins' }}>
-              {advisor.name}
-            </Typography>
-            <Typography variant="subtitle2" sx={{ fontSize: '1.1rem', color: '#ddd', fontFamily: 'Montserrat' }}>
-              {advisor.title}
-            </Typography>
-          </Box>
-        </Box>
-      </motion.div>
-    </Grid>
-  ));
+};
 
+const Committees = () => {
   return (
-    <div style={{
-      background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
-      minHeight: '100vh',
-      padding: '2rem',
-      overflowY: 'auto',
-      backgroundAttachment: 'fixed'
-    }}>
-      <Container maxWidth="lg">
-        <Typography variant="h3" align="center" gutterBottom sx={{ margin: '2rem 0', fontWeight: 'bold', color: '#fff', fontFamily: 'Poppins' }}>
-        Committee
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      transition={{ duration: 1 }}
+      style={{
+        background: 'linear-gradient(135deg, #32a852, #4285f4)',
+        minHeight: '100vh',
+        padding: '4rem 2rem',
+        color: '#fff',
+      }}
+    >
+      <Container maxWidth="1.5g">
+        <Typography variant="h2" align="center" gutterBottom sx={{
+          marginBottom: '3rem',
+          fontWeight: '500',
+          fontFamily: 'Cinzel',
+          letterSpacing: '3px',
+          textShadow: '3px 3px 8px rgba(0,0,0,0.6)',
+          textTransform: 'uppercase',
+          color: '#000'
+        }}>
+          Committees
         </Typography>
-
-        <Typography variant="h4" align="center" sx={{ margin: '1rem 0', fontWeight: 'bold', color: '#fff', fontFamily: 'Montserrat' }}>
-          Main Chair Persons
-        </Typography>
-        <Grid container spacing={2} justifyContent="center">
-          {renderAdvisors(mainChairPersons)}
-        </Grid>
-
-        <Typography variant="h4" align="center" sx={{ margin: '2rem 0', fontWeight: 'bold', color: '#fff', fontFamily: 'Montserrat' }}>
-          Honorary Chair
-        </Typography>
-        <Grid container spacing={2} justifyContent="center">
-          {renderAdvisors(nationalBoard)}
-        </Grid>
-
-        <Typography variant="h4" align="center" sx={{ margin: '2rem 0', fontWeight: 'bold', color: '#fff', fontFamily: 'Montserrat' }}>
-          General Chair
-        </Typography>
-        <Grid container spacing={2} justifyContent="center">
-          {renderAdvisors(localAdvisors)}
-        </Grid>
+        {Object.entries(committees).map(([section, members], index) => (
+          <Box key={index} sx={{ marginBottom: '4rem' }}>
+            <Typography variant="h4" sx={{
+              fontWeight: '500',
+              fontFamily: 'Montserrat',
+              marginBottom: '1.5rem',
+              letterSpacing: '1px',
+              color: '#1a1a1a',
+              textAlign: 'center'
+            }}>
+              {section}
+            </Typography>
+            <Grid container spacing={2} justifyContent="center">
+              {members.map((person, idx) => (
+                <Grid item xs={12} sm={6} md={4} key={idx}>
+                  <motion.div
+                    whileHover={{ scale: 1.1 }}
+                    initial={{ opacity: 0, y: 50 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.5, delay: idx * 0.1 }}
+                  >
+                    <Box sx={{
+                      background: 'rgba(255, 255, 255, 0.15)',
+                      backdropFilter: 'blur(15px)',
+                      borderRadius: '20px',
+                      padding: '1.5rem',
+                      textAlign: 'center',
+                      boxShadow: '0px 15px 25px rgba(0,0,0,0.4)',
+                      border: '2px solid rgba(255, 255, 255, 0.5)',
+                      cursor: 'pointer',
+                      transition: 'all 0.3s ease-in-out',
+                      height: '150px',
+                      display: 'flex',
+                      flexDirection: 'column',
+                      justifyContent: 'center',
+                      alignItems: 'center'
+                    }}>
+                      <Typography variant="h5" sx={{
+                        fontWeight: '500',
+                        fontFamily: 'Montserrat',
+                        color: '#fff',
+                        letterSpacing: '1px',
+                        marginBottom: '0.5rem'
+                      }}>
+                        {person.name}
+                      </Typography>
+                      <Typography variant="subtitle1" sx={{
+                        fontWeight: '200',
+                        fontFamily: 'Poppins',
+                        color: 'yellow',
+                        fontSize: '1.25rem'
+                      }}>
+                        {person.title}
+                      </Typography>
+                    </Box>
+                  </motion.div>
+                </Grid>
+              ))}
+            </Grid>
+          </Box>
+        ))}
       </Container>
-    </div>
+    </motion.div>
   );
-};  
+};
 
-export default Members;
+export default Committees;

@@ -1,48 +1,57 @@
-@import "tailwindcss";
-
-#root{
-  --background:#efe9f4;
-  --font:#171d1c;
-  --button:#5863f8;
-  --hover:#5fbff9;
-  --seperator:#16bac5;
-  background:var(--background);
-min-height: 100vh;
+/* #root {
+  --background: #efe9f4;
+  --font: #171d1c;
+  --button: #5863f8;
+  --hover: #5fbff9;
+  --seperator: #16bac5;
+  background: var(--background);
+  min-height: 100vh;
+} */
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: var(--font);
+} */
+.flexbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-*{
+/* *{
   margin:0;
   padding:0;
   box-sizing:border-box;
   color:var(--font);
+} */
+h1 {
+  font-size: 2rem;
+  font-weight: bold;
 }
-h1{
-  font-size:2rem;
-  font-weight:bold;
+.flexbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.flexbox{
-display:flex;
-justify-content: center;
-align-items: center;
-}
-.flexbox-column{
-  display:flex;
+.flexbox-column {
+  display: flex;
   flex-direction: column;
 }
-.flexbox-spacearound{
-  display:flex;
+.flexbox-spacearound {
+  display: flex;
   justify-content: space-around;
   align-items: center;
 }
-button{
-  border:none;
-  background:var(--font);
-  color:var(--background);
-  padding:0.5rem 1rem;
-border:2px solid var(--font);
+button {
+  border: none;
+  background: var(--font);
+  color: var(--background);
+  padding: 0.5rem 1rem;
+  border: 2px solid var(--font);
 }
-button:hover{
-  background:var(--background);
-  color:var(--font);
+button:hover {
+  background: var(--background);
+  color: var(--font);
 }
 .navbar a,.dropdown {
   text-decoration: none;
@@ -110,106 +119,111 @@ left:-80px;
   color: var(--font);
 }
 
-
-.hero{
-  background: linear-gradient(to left,var(--background),var(--button),var(--hover));
-  padding:1rem;
+.hero {
+  background: linear-gradient(
+    to left,
+    var(--background),
+    var(--button),
+    var(--hover)
+  );
+  padding: 1rem;
   flex-wrap: wrap;
-  min-height:100vh;
+  min-height: 100vh;
 }
-.hero>div{
-  width:50%;
-  padding:1rem;
+.hero > div {
+  width: 50%;
+  padding: 1rem;
   min-width: 300px;
-  background-color:rgb(255,255,255,0.2);
-  border:3px solid var(--hover);
-  border-radius:10px; 
-  gap:50px;
+  background-color: rgb(255, 255, 255, 0.2);
+  border: 3px solid var(--hover);
+  border-radius: 10px;
+  gap: 50px;
 }
-.hero>h1{
-  width:50%;
+.hero > h1 {
+  width: 50%;
   text-align: center;
 }
-.hero>div>h1{
-text-align: center;
+.hero > div > h1 {
+  text-align: center;
 }
-.hero>div>div{
-width:100%;
+.hero > div > div {
+  width: 100%;
 }
-.hero>div>div>span{
-border:2px solid var(--font);
-padding:0.4rem 1rem;
+.hero > div > div > span {
+  border: 2px solid var(--font);
+  padding: 0.4rem 1rem;
 }
-.hero>div>div>span:hover{
-background:var(--font);
-color:var(--background);
+.hero > div > div > span:hover {
+  background: var(--font);
+  color: var(--background);
 }
-  .hero-button{
+.hero-button {
   flex-wrap: wrap;
-  gap:20px;
+  gap: 20px;
 }
-.home{
-  width:100%;
+.home {
+  width: 100%;
 }
 .home-first{
   padding:2rem;
 margin:50px;
   gap:100px;
+
   flex-wrap: wrap;
 }
-.home-first h1,.home-first p{
-  width:40%;
+.home-first h1,
+.home-first p {
+  width: 40%;
 }
-.home-sponser>h1{
-text-align: center;
-margin:50px;
+.home-sponser > h1 {
+  text-align: center;
+  margin: 50px;
 }
-.home-sponser>div{
-  flex-wrap:wrap;
-  width:100%;
-  padding:1rem;
-  gap:50px;
-  background:linear-gradient(to top ,var(--seperator),var(--button));
+.home-sponser > div {
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 1rem;
+  gap: 50px;
+  background: linear-gradient(to top, var(--seperator), var(--button));
 }
-  
-.home-sponser>div>div{
-  background:rgb(255,255,255,0.32);
-  padding:1rem;
-  border:2px solid var(--button);
+
+.home-sponser > div > div {
+  background: rgb(255, 255, 255, 0.32);
+  padding: 1rem;
+  border: 2px solid var(--button);
   border-radius: 10px;
 }
-  .home-sponser>div img{
+.home-sponser > div img {
   min-width: 260px;
 }
-footer{
-  background: linear-gradient(to bottom,var(--seperator),var(--button));
-  border-top:2px solid var(--hover);
-  padding:1rem;
-  margin-top:50vh;
+footer {
+  background: linear-gradient(to bottom, var(--seperator), var(--button));
+  border-top: 2px solid var(--hover);
+  padding: 1rem;
+  margin-top: 50vh;
 }
-footer>div{
-  width:100%;
-  gap:10px;
+footer > div {
+  width: 100%;
+  gap: 10px;
   flex-wrap: wrap;
 }
-footer>div>div{
-padding:1rem;
-min-width:100px;
-background:rgb(255,255,255,0.4);
-border:2px solid var(--button);
-border-radius: 10px;
-transition: 0.3s;
+footer > div > div {
+  padding: 1rem;
+  min-width: 100px;
+  background: rgb(255, 255, 255, 0.4);
+  border: 2px solid var(--button);
+  border-radius: 10px;
+  transition: 0.3s;
 }
-footer>div>div:hover{
+footer > div > div:hover {
   transform: scale(1.1);
 }
 
-footer>p{
-  font-weight:bold;
-  color:var(--background);
-  margin-top:50px;
+footer > p {
+  font-weight: bold;
+  color: var(--background);
+  margin-top: 50px;
 }
-
 
 .advisor-card {
   transition: transform 0.3s;
@@ -226,6 +240,7 @@ footer>p{
   object-fit: cover;
   margin-bottom: 15px;
 }
+
 
 
 
@@ -249,31 +264,35 @@ footer>p{
     padding: 1rem;
     text-align: center;
   }
-  .nav-two{
-    top:450px;
-    padding-top:0;
+  .nav-two {
+    top: 450px;
+    padding-top: 0;
   }
 
   .nav-open {
     display: flex;
   }
-  h1{
-    font-size:1.2rem;
+  h1 {
+    font-size: 1.2rem;
   }
 
-  .hero-button button, .hero-button span{
-  width:80%;
+  .hero-button button,
+  .hero-button span {
+    width: 80%;
   }
 
-.home-first h1,.home-first p{
-  width:90%;
-}
-  .home-first{
-    padding:0 ;
-    margin:10px;
+  .home-first h1,
+  .home-first p {
+    width: 90%;
   }
+
   footer>div>h1{
     width:100%;
     text-align:center;
+
+  .home-first {
+    padding: 0;
+    margin: 10px;
+
   }
 }

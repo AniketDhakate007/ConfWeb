@@ -1,11 +1,12 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { Menu, X } from "lucide-react";
+// import { Link } from "react-router-dom";
+import "./navbar.css";
 
-export default function Navbar() {
-  const [isOpen, setIsOpen] = useState(false);
-
+export default function () {
   return (
+
     <nav className="navbar">
       <div className="nav-container">
         {/* Mobile Menu Button */}
@@ -43,7 +44,8 @@ export default function Navbar() {
           </div>
           </div>
         </div>
+
       </div>
-    </nav>
+    </div>
   );
 }
