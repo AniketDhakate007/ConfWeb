@@ -43,7 +43,7 @@ button {
   padding: 0.5rem 1rem;
   border: 2px solid var(--font);
 }
-button:hover {
+button:hover,.dropdown:hover {
   background: var(--background);
   color: var(--font);
 }
@@ -59,16 +59,23 @@ button:hover {
 .dropdown a{
   text-wrap: nowrap;
   display:block;
+  color:white;
 }
 .dropdown>div{
   position:absolute;
 display: none;
-background: rgb(255,255,255);
+background: rgb(255,255,255,0.3);
+backdrop-filter: blur(10px);
 width:210px;
+padding:0.2rem;
 left:-90px;
+box-shadow:0 0 50px 0px rgb(0,0,0,0.3);
 }
 .dropdown:hover>div{
   display: block;
+}
+.dropdown a:hover {
+background:green !important;
 }
 .navbar {
   padding: 0.4rem;
@@ -78,6 +85,9 @@ left:-90px;
   justify-content: space-between;
   display: flex;
   align-items: center;
+}
+.navbar>span{
+display:none;
 }
 
 .navbar a:hover {
@@ -248,29 +258,35 @@ footer > p {
 
 /* Responsive Styles */
 @media (max-width: 768px) {
-  .menu-button {
-    display: block;
+  *{
   }
-
-  .nav-one,
-  .nav-two {
-    display: none;
-    flex-direction: column;
-    background: var(--background);
-    width: 100%;
-    position: absolute;
-    top: 50px;
-    left: 0;
-    padding: 1rem;
-    text-align: center;
+  .navbar{
+min-height:50px;
   }
-  .nav-two {
-    top: 450px;
-    padding-top: 0;
+.navbar>span{
+display:block;
+}
+  .nav-two{
+width:70%;
   }
-
-  .nav-open {
-    display: flex;
+  .dropdown>div{
+position:relative;
+display:none;
+left:-5%;
+margin-top:10px;
+  }
+  .dropdown:hover>div{
+display:block;
+  }
+  .navbar:hover>span{
+display:none;
+  }
+  .navbar:hover>div,.navbar:hover>div>div{
+display:flex;
+  }
+  .nav-container,.nav-container>div{
+    display:none;
+    flex-direction:column;
   }
   h1 {
     font-size: 1.2rem;

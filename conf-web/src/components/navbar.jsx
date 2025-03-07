@@ -1,29 +1,52 @@
 import { Link } from "react-router-dom";
-import "./navbar.css";
-import Dropdown from "./dropdown";
-import Dropdown2 from "./dropdown2";
+
+
 
 export default function () {
   return (
 
     <nav className="navbar">
+    <span>Menu</span>
       <div className="nav-container">
 
-        <div className={`nav-one`}>
+        <div className='nav-one'>
           <Link to="/">Home</Link>
           <Link to="/advboard">Advisory Board</Link>
           <Link to="/commitee">Committees</Link>
-          <Dropdown></Dropdown>
+
+          <Link to="/kspeaker">Keynote Speakers</Link>
+          <div className="dropdown"><span>For Authors</span>
+          <div>
+<Link to="/call_for_Papers">Call for Paper</Link>
+<Link to="/about">Important Dates</Link>
+<Link to="/">Paper Format</Link>
+<Link to="/">Paper Submission</Link>
+          </div>
+          </div>
+
           <Link to="/register">Registration</Link>
           <Link to="/program">Programme Schedule</Link>
         </div>
 
-        <div className={`nav-two`}>
+        <div className='nav-two'>
           <Link to="/contact">Contact Us</Link>
-        <Dropdown2></Dropdown2>
+
+          <div className="dropdown"><span>About</span>
+          <div>
+<Link to="/about">About College</Link>
+<Link to="/Theme-scope">Theme and Scope</Link>
+          </div>
+          </div>
+
         </div>
 
       </div>
     </nav>
   );
 }
+/*
+   { name: 'Call For Papers', path: '/call_for_papers' },
+    { name: 'Important Dates', path: '/about' },
+    { name: 'Paper Format', path: '/' },
+    { name: 'Paper Submission', path: '/' }
+ * */
