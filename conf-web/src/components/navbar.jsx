@@ -1,7 +1,4 @@
-import { useState } from "react";
 import { Link } from "react-router-dom";
-import { Menu, X } from "lucide-react";
-// import { Link } from "react-router-dom";
 import "./navbar.css";
 
 export default function () {
@@ -14,10 +11,9 @@ export default function () {
           <Link to="/">Home</Link>
           <Link to="/advboard">Advisory Board</Link>
           <Link to="/commitee">Committees</Link>
-          <Link to="/kspeaker">Keynote Speakers</Link>
           <div className="dropdown"><span>For Authors</span>
           <div>
-<Link to="/about">Call for Paper</Link>
+<Link to="/call_for_papers">Call for Paper</Link>
 <Link to="/about">Important Dates</Link>
 <Link to="/about">Paper Format</Link>
 <Link to="/about">Paper Submission</Link>
@@ -31,8 +27,13 @@ export default function () {
           <Link to="/contact">Contact Us</Link>
           <div className="dropdown"><span>About</span>
           <div>
-<Link to="/about">About College</Link>
-<Link to="/about">Theme and Scope</Link>
+<Link
+  to="#"
+  onClick={() => window.open('https://www.kdkce.edu.in/', '_blank', 'noopener,noreferrer')}
+>
+  About College
+</Link>
+<Link to="/Theme-scope">Theme and Scope</Link>
           </div>
           </div>
         </div>
