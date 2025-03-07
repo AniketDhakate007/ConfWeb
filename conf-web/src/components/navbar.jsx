@@ -9,16 +9,8 @@ export default function () {
 
     <nav className="navbar">
       <div className="nav-container">
-        {/* Mobile Menu Button */}
-        <button
-          onClick={() => setIsOpen(!isOpen)}
-          className="menu-button"
-        >
-          {isOpen ? <X size={28} /> : <Menu size={28} />}
-        </button>
 
-        {/* Navigation Links */}
-        <div className={`nav-one ${isOpen ? "nav-open" : ""}`}>
+        <div className={`nav-one`}>
           <Link to="/">Home</Link>
           <Link to="/advboard">Advisory Board</Link>
           <Link to="/commitee">Committees</Link>
@@ -35,7 +27,7 @@ export default function () {
           <Link to="/program">Programme Schedule</Link>
         </div>
 
-        <div className={`nav-two ${isOpen ? "nav-open" : ""}`}>
+        <div className={`nav-two`}>
           <Link to="/contact">Contact Us</Link>
           <div className="dropdown"><span>About</span>
           <div>
@@ -46,6 +38,6 @@ export default function () {
         </div>
 
       </div>
-    </div>
+    </nav>
   );
 }
