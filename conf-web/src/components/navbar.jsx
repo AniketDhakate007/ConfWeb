@@ -22,14 +22,26 @@ export default function Navbar() {
           <Link to="/advboard">Advisory Board</Link>
           <Link to="/commitee">Committees</Link>
           <Link to="/kspeaker">Keynote Speakers</Link>
-          <Link to="/authors">Call for Papers</Link>
+          <div className="dropdown"><span>For Authors</span>
+          <div>
+<Link to="/about">Call for Paper</Link>
+<Link to="/about">Important Dates</Link>
+<Link to="/about">Paper Format</Link>
+<Link to="/about">Paper Submission</Link>
+          </div>
+          </div>
           <Link to="/register">Registration</Link>
           <Link to="/program">Programme Schedule</Link>
         </div>
 
         <div className={`nav-two ${isOpen ? "nav-open" : ""}`}>
           <Link to="/contact">Contact Us</Link>
-          <Link to="/about">About</Link>
+          <div className="dropdown"><span>About</span>
+          <div>
+<Link to="/about">About College</Link>
+<Link to="/about">Theme and Scope</Link>
+          </div>
+          </div>
         </div>
       </div>
     </nav>

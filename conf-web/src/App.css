@@ -44,16 +44,32 @@ button:hover{
   background:var(--background);
   color:var(--font);
 }
-.navbar a {
+.navbar a,.dropdown {
   text-decoration: none;
   padding: 0.5rem 1rem;
   border-radius: 10px;
   border: 2px solid transparent;
 }
-
+.dropdown{
+  position:relative;
+}
+.dropdown a{
+  text-wrap: nowrap;
+  display:block;
+}
+.dropdown>div{
+  position:absolute;
+display: none;
+background: rgb(255,255,255,0.2);
+width:210px;
+left:-80px;
+}
+.dropdown:hover>div{
+  display: block;
+}
 .navbar {
-  background: linear-gradient(to right, var(--seperator), var(--background), var(--hover));
   padding: 0.4rem;
+  background: linear-gradient(135deg, #32a852, #4285f4);
   position:relative;
   z-index:10;
   justify-content: space-between;
@@ -138,7 +154,6 @@ color:var(--background);
 .home-first{
   padding:2rem;
 margin:50px;
-border:2px solid green;
   gap:100px;
   flex-wrap: wrap;
 }
@@ -211,7 +226,11 @@ footer>p{
   object-fit: cover;
   margin-bottom: 15px;
 }
- 
+
+
+
+
+
 /* Responsive Styles */
 @media (max-width: 768px) {
   .menu-button {
@@ -253,5 +272,8 @@ footer>p{
     padding:0 ;
     margin:10px;
   }
-
+  footer>div>h1{
+    width:100%;
+    text-align:center;
+  }
 }
