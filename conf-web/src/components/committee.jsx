@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Box, Typography, Grid } from '@mui/material';
+import { Container, Box, Typography, Grid, Grid2 } from '@mui/material';
 import { motion } from 'framer-motion';
 
 const committees = {
@@ -83,9 +83,9 @@ const Committees = () => {
             }}>
               {section}
             </Typography>
-            <Grid container spacing={2} justifyContent="center">
+            <Grid2 container spacing={2} justifyContent="center">
               {members.map((person, idx) => (
-                <Grid item xs={12} sm={6} md={4} key={idx}>
+                <Grid2 item xs={12} sm={6} md={4} key={idx}>
                   <motion.div
                     whileHover={{ scale: 1.1 }}
                     initial={{ opacity: 0, y: 50 }}
@@ -127,9 +127,9 @@ const Committees = () => {
                       </Typography>
                     </Box>
                   </motion.div>
-                </Grid>
+                </Grid2>
               ))}
-            </Grid>
+            </Grid2>
           </Box>
         ))}
       </Container>

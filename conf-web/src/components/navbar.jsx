@@ -14,7 +14,7 @@ export default function () {
           <Link to="/advboard">Advisory Board</Link>
           <Link to="/commitee">Committees</Link>
 
-          <Link to="/kspeaker">Keynote Speakers</Link>
+          {/* <Link to="/kspeaker">Keynote Speakers</Link> */}
           <div className="dropdown"><span>For Authors</span>
           <div>
 <Link to="/call_for_Papers">Call for Paper</Link>
@@ -25,7 +25,7 @@ export default function () {
           </div>
 
           <Link to="/register">Registration</Link>
-          <Link to="/program">Programme Schedule</Link>
+          {/* <Link to="/program">Programme Schedule</Link> */}
         </div>
 
         <div className='nav-two'>
@@ -33,7 +33,12 @@ export default function () {
 
           <div className="dropdown"><span>About</span>
           <div>
-<Link to="/about">About College</Link>
+          <Link
+  to="#"
+  onClick={() => window.open('https://www.kdkce.edu.in/', '_blank', 'noopener,noreferrer')}
+>
+  About College
+</Link>
 <Link to="/Theme-scope">Theme and Scope</Link>
           </div>
           </div>
