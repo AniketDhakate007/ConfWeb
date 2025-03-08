@@ -16,9 +16,11 @@ import "./pages/call_for_papers.css";
 import "./App.css";
 import ThemeScope from "./pages/Theme-scope";
 
+
 export default function () {
   return (
     <>
+     
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
@@ -34,7 +36,7 @@ export default function () {
         <Route path="/Theme-scope" element={<ThemeScope />} />
       </Routes>
 
-      <Footer />
+    
     </>
   );
 }
