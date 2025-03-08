@@ -7,6 +7,14 @@
   background: var(--background);
   min-height: 100vh;
 } 
+@keyframes appear{
+from{
+opacity:0;
+}
+to{
+  opacity:1;
+}
+}
  * {
   margin: 0;
   padding: 0;
@@ -169,6 +177,8 @@ display:none;
 }
 .home {
   width: 100%;
+  animation:appear;
+  animation-duration:2s;
 }
 .home-first{
   padding:2rem;
