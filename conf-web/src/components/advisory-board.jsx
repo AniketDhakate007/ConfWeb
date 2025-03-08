@@ -1,5 +1,7 @@
 import React from 'react';
-import { Container, Box, Typography, Grid, Grid2 } from '@mui/material';
+
+import { Container, Box, Typography, Grid2 } from '@mui/material';
+
 import { motion } from 'framer-motion';
 
 const advisoryBoard = [
@@ -143,6 +145,7 @@ const AdvisoryBoard = () => {
 
         <Typography variant="h3" align="center" gutterBottom sx={{
           marginTop: '4rem',
+	    fontSize:'2rem',
           marginBottom: '3rem',
           fontWeight: '500',
           fontFamily: 'Poppins',
