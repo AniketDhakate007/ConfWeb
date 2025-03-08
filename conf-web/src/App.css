@@ -59,7 +59,7 @@ button:hover,.dropdown:hover {
 .dropdown a{
   text-wrap: nowrap;
   display:block;
-  color:white;
+color:var(--font);
 }
 .dropdown>div{
   position:absolute;
@@ -258,8 +258,8 @@ footer > p {
 
 /* Responsive Styles */
 @media (max-width: 768px) {
-  *{
-  }
+ 
+  
   .navbar{
 min-height:50px;
   }

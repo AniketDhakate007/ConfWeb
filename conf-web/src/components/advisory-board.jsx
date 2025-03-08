@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Box, Typography, Grid } from '@mui/material';
+import { Container, Box, Typography, Grid2 } from '@mui/material';
 import { motion } from 'framer-motion';
 
 const advisoryBoard = [
@@ -93,9 +93,9 @@ const AdvisoryBoard = () => {
         }}>
           Advisory Board
         </Typography>
-        <Grid container spacing={3} justifyContent="center">
+        <Grid2 container spacing={3} justifyContent="center">
           {advisoryBoard.map((person, index) => (
-            <Grid item xs={12} sm={6} md={3} key={index}>
+            <Grid2 item xs={12} sm={6} md={3} key={index}>
               <motion.div
                 whileHover={{ scale: 1.1 }}
                 initial={{ opacity: 0, y: 50 }}
@@ -137,12 +137,13 @@ const AdvisoryBoard = () => {
                   </Typography>
                 </Box>
               </motion.div>
-            </Grid>
+            </Grid2>
           ))}
-        </Grid>
+        </Grid2>
 
         <Typography variant="h2" align="center" gutterBottom sx={{
           marginTop: '4rem',
+	    fontSize:'2rem',
           marginBottom: '3rem',
           fontWeight: '500',
           fontFamily: 'Poppins',
@@ -152,9 +153,9 @@ const AdvisoryBoard = () => {
         }}>
           Organizing Board
         </Typography>
-        <Grid container spacing={2} justifyContent="center">
+        <Grid2 container spacing={2} justifyContent="center">
           {organizingBoard.map((person, index) => (
-            <Grid item xs={12} sm={6} md={3} key={index}>
+            <Grid2 item xs={12} sm={6} md={3} key={index}>
               <motion.div
                 whileHover={{ scale: 1.1 }}
                 initial={{ opacity: 0, y: 50 }}
@@ -196,9 +197,9 @@ const AdvisoryBoard = () => {
                   </Typography>
                 </Box>
               </motion.div>
-            </Grid>
+            </Grid2>
           ))}
-        </Grid>
+        </Grid2>
       </Container>
     </motion.div>
   );
