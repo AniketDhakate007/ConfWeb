@@ -35,7 +35,7 @@ export default function () {
         <Route path="/about" element={<About />} />
         <Route path="/Theme-scope" element={<ThemeScope />} />
       </Routes>
-
+<Footer/>
     
     </>
   );
