@@ -60,7 +60,7 @@ const Committees = () => {
       }}
     >
       <Container maxWidth="1.5g">
-        <Typography variant="h2" align="center" gutterBottom sx={{
+        <Typography variant="h3" align="center" gutterBottom sx={{
           marginBottom: '3rem',
           fontWeight: '500',
           fontFamily: 'Cinzel',
