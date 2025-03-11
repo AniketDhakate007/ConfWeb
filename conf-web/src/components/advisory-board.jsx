@@ -41,7 +41,7 @@ const advisoryBoard = [
     
 ];
 
-const organizingBoard = [
+const organisingBoard = [
   { name: 'Prof. S. S. Ganorkar ', title:'Asst. Professor, Department of Information Technology, KDKCE '},
   { name: 'Dr. R. Burange ', title:'Asst Prof. Department of Electronics & Tele-Comm. Engineering, KDKCE'},
    { name: 'Dr. H.V. Gorewar ', title:' Asst. Professor, Department of Information Technology, KDKCE '},
@@ -67,144 +67,90 @@ const organizingBoard = [
 ];
 
 const AdvisoryBoard = () => {
-  return (
-    <motion.div
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      exit={{ opacity: 0 }}
-      transition={{ duration: 1 }}
-      style={{
-        background: 'linear-gradient(135deg, #32a852, #4285f4)',
-        minHeight: '100vh',
-        padding: '4rem 2rem',
-        color: '#fff',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'flex-start',
-        flexDirection: 'column'
-      }}
-    >
-      <Container maxWidth="1.5g">
-        <Typography variant="h2" align="center" gutterBottom sx={{
-          marginBottom: '3rem',
-          fontWeight: '500',
-          fontFamily: 'Poppins',
-          letterSpacing: '3px',
-          textShadow: '3px 3px 8px rgba(0,0,0,0.6)',
-          textTransform: 'uppercase'
-        }}>
-          Advisory Board
-        </Typography>
-        <Grid2 container spacing={3} justifyContent="center">
-          {advisoryBoard.map((person, index) => (
-            <Grid2 item xs={12} sm={6} md={3} key={index}>
-              <motion.div
-                whileHover={{ scale: 1.1 }}
-                initial={{ opacity: 0, y: 50 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
-              >
-                <Box sx={{
-                  background: 'rgba(255, 255, 255, 0.15)',
-                  backdropFilter: 'blur(15px)',
-                  borderRadius: '15px',
-                  padding: '1rem',
-                  textAlign: 'center',
-                  boxShadow: '0px 15px 25px rgba(0,0,0,0.4)',
-                  border: '2px solid rgba(255, 255, 255, 0.5)',
-                  cursor: 'pointer',
-                  transition: 'all 0.3s ease-in-out',
-                  marginBottom: '1.5rem',
-                  height: '200px',
-                  display: 'flex',
-                  flexDirection: 'column',
-                  justifyContent: 'center'
-                }}>
-                  <Typography variant="h5" sx={{
-                    fontWeight: '500',
-                    fontFamily: 'Montserrat',
-                    marginBottom: '0.5rem',
-                    color: '#fff',
-                    letterSpacing: '1px'
-                  }}>
-                    {person.name}
-                  </Typography>
-                  <Typography variant="subtitle1" sx={{
-                    fontWeight: '200',
-                    fontFamily: 'Poppins',
-                    color: 'yellow',
-                    fontSize: '1.25rem'
-                  }}>
-                    {person.title}
-                  </Typography>
-                </Box>
-              </motion.div>
-            </Grid2>
-          ))}
-        </Grid2>
+  const containerStyle = {
+    background: 'linear-gradient(135deg, #32a852, #4285f4)',
+    minHeight: '100vh',
+    padding: '4rem 2rem',
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+  };
 
-        <Typography variant="h3" align="center" gutterBottom sx={{
-          marginTop: '4rem',
-	    fontSize:'2rem',
-          marginBottom: '3rem',
-          fontWeight: '500',
-          fontFamily: 'Poppins',
-          letterSpacing: '3px',
-          textShadow: '3px 3px 8px rgba(0,0,0,0.6)',
-          textTransform: 'uppercase'
-        }}>
-          Organizing Board
-        </Typography>
-        <Grid2 container spacing={2} justifyContent="center">
-          {organizingBoard.map((person, index) => (
-            <Grid2 item xs={12} sm={6} md={3} key={index}>
-              <motion.div
-                whileHover={{ scale: 1.1 }}
-                initial={{ opacity: 0, y: 50 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
-              >
-                <Box sx={{
-                  background: 'rgba(255, 255, 255, 0.15)',
-                  backdropFilter: 'blur(15px)',
-                  borderRadius: '20px',
-                  padding: '1.5rem',
-                  textAlign: 'center',
-                  boxShadow: '0px 15px 25px rgba(0,0,0,0.4)',
-                  border: '2px solid rgba(255, 255, 255, 0.5)',
-                  cursor: 'pointer',
-                  transition: 'all 0.3s ease-in-out',
-                  marginBottom: '1.5rem',
-                  height: '150px',
-                  display: 'flex',
-                  flexDirection: 'column',
-                  justifyContent: 'center'
-                }}>
-                  <Typography variant="h5" sx={{
-                    fontWeight: '500',
-                    fontFamily: 'Montserrat',
-                    marginBottom: '0.5rem',
-                    color: '#fff',
-                    letterSpacing: '1px'
-                  }}>
-                    {person.name}
-                  </Typography>
-                  <Typography variant="subtitle1" sx={{
-                    fontWeight: '200',
-                    fontFamily: 'Poppins',
-                    color: 'yellow',
-                    fontSize: '1.25rem'
-                  }}>
-                    {person.title}
-                  </Typography>
-                </Box>
-              </motion.div>
-            </Grid2>
-          ))}
-        </Grid2>
-      </Container>
-    </motion.div>
+  const titleStyle = {
+    color: '#000',
+    fontSize: '2.5rem',
+    marginBottom: '1.5rem',
+    fontFamily: 'Montserrat',
+    textAlign: 'center',
+  };
+
+  const boardContainerStyle = {
+    display: 'grid',
+    gridTemplateColumns: 'repeat(auto-fit, minmax(275px, 1fr))',
+    gap: '2rem',
+    width: '100%',
+    maxWidth: '1400px',
+  };
+
+  const cardStyle = {
+    background: 'rgba(255, 255, 255, 0.15',
+    borderRadius: '20px',
+    padding: '1.5rem',
+    boxShadow: '0px 10px 30px rgba(0,0,0,0.2)',
+    cursor: 'pointer',
+    fontFamily: 'Montserrat',
+    textAlign: 'center',
+    transition: 'transform 0.1s ease-in-out',
+    minHeight: '450px',
+    display: 'flex',
+    flexDirection: 'column',
+    justifyContent: 'center',
+    wordBreak: 'break-word',
+  };
+
+  const nameStyle = {
+    fontSize: '1.5rem',
+    marginBottom: '0.5rem',
+    color: '#fff',
+  };
+
+  const designationStyle = {
+    fontSize: '1.1rem',
+    fontWeight: 'bold',
+    color: '#333',
+  };
+
+  return (
+    <div style={containerStyle}>
+      <h1 style={titleStyle}>Advisory Board</h1>
+      <div style={boardContainerStyle}>
+        {advisoryBoard.map((member, index) => (
+          <motion.div
+            key={index}
+            whileHover={{ scale: 1.05 }}
+            style={cardStyle}
+          >
+            <h2 style={nameStyle}>{member.name}</h2>
+            <p style={designationStyle}>{member.title}</p>
+          </motion.div>
+        ))}
+      </div>
+      <h1 style={{ ...titleStyle, marginTop: '3rem' }}>Organising Board</h1>
+      <div style={boardContainerStyle}>
+        {organisingBoard.map((member, index) => (
+          <motion.div
+            key={index}
+            whileHover={{ scale: 1.05 }}
+            style={cardStyle}
+          >
+            <h2 style={nameStyle}>{member.name}</h2>
+            <p style={designationStyle}>{member.title}</p>
+          </motion.div>
+        ))}
+      </div>
+    </div>
   );
 };
 
 export default AdvisoryBoard;
+
