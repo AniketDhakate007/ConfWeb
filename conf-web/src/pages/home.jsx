@@ -55,12 +55,6 @@ The Karmavir Dadasaheb Kannamwar College of Engineering, situated in the heart o
     </div>
     </div>
 
-    <div className='home-sponser'>
-    <h1>Sponsers</h1>
-    <div className='flexbox-spacearound'>
-    {sponser.map((sponser,index)=><div><img key={index} src={sponser}/></div>)}
-    </div>
-    </div>
     </div>
     //  <Homep/> 
   )
