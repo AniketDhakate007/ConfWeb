@@ -20,7 +20,7 @@ export default function(){
                 <b>Phone: +91-9146033004</b>
                 </div>
         </div>
-        <p>Copyright © ICMARAI-2026 - All Rights Reserved</p>
+        <p>Copyright © ETRCEE-25 - All Rights Reserved</p>
     </footer>
     )
 }

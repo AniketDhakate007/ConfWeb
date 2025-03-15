@@ -5,7 +5,6 @@ import Home from "./pages/home";
 import Adv from "./pages/advboard";
 import Commit from "./pages/commit";
 import Kspeaker from "./pages/kspeaker";
-import Authors from "./pages/authors";
 import Program from "./pages/program";
 import Contact from "./pages/contact";
 import About from "./pages/about";
@@ -23,6 +22,7 @@ export default function () {
     <>
      
       <Navbar />
+    <main>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/advboard" element={<Adv />} />
@@ -37,6 +37,7 @@ export default function () {
         <Route path="/Theme-scope" element={<ThemeScope />} />
         <Route path="/imp_dates" element={<ImportantDates/>} />
       </Routes>
+    </main>
 <Footer/>
     
     </>
