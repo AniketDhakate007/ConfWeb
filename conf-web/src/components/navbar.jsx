@@ -19,7 +19,7 @@ export default function () {
     <div className="dropdown"><span>For Authors</span>
     <div>
     <Link to="/call_for_Papers">Call for Paper</Link>
-    <Link to="/about">Important Dates</Link>
+    <Link to="/imp_dates">Important Dates</Link>
     <Link to="https://forms.gle/VEKdtDL7r3qp52fC6">Paper Submission</Link>
     </div>
     </div>
