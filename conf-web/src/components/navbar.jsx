@@ -7,6 +7,7 @@ export default function () {
 
     <header className="navbar">
     <span>Menu</span>
+
     <div className="nav-container">
 
     <div className='nav-one'>
@@ -46,6 +47,7 @@ export default function () {
 
     </div>
     </header>
+
   );
 }
 /*
