@@ -12,7 +12,7 @@ Organized by Department of Computer Science and Engineering & Artificial Intelli
             </p>
             <div className="flexbox hero-button">
                 <button onClick={()=>{navigate('/register')}}>Register</button>
-                <span onClick={()=>{navigate('/about')}}>Learn more</span>
+                <span onClick={()=>{window.location.href="https://www.kdkce.edu.in/"}}>Learn more</span>
             </div>
             </div>
 <h1>

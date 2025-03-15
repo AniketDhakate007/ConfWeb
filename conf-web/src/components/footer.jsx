@@ -8,9 +8,9 @@ export default function(){
             <div className='flexbox-column'>
                 <h3>Useful Links</h3>
                 <Link to="/">Home</Link>
-                <Link to="#">Important Dates</Link>
-                <Link to="/about">About</Link>
-                <Link to="#">Call for paper</Link>
+                <Link to="/imp_dates">Important Dates</Link>
+                <Link to="https://www.kdkce.edu.in/">About</Link>
+                <Link to="call_for_Papers">Call for paper</Link>
             </div>
             <div className='flexbox-column'>
                 <h3>Contact Us</h3>
