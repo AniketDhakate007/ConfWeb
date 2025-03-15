@@ -41,7 +41,7 @@ const advisoryBoard = [
     
 ];
 
-const organisingBoard = [
+const organizingBoard = [
   { name: 'Prof. S. S. Ganorkar ', title:'Asst. Professor, Department of Information Technology, KDKCE '},
   { name: 'Dr. R. Burange ', title:'Asst Prof. Department of Electronics & Tele-Comm. Engineering, KDKCE'},
    { name: 'Dr. H.V. Gorewar ', title:' Asst. Professor, Department of Information Technology, KDKCE '},
