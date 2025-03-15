@@ -24,12 +24,11 @@ export default function () {
     </div>
     </div>
 
-    <Link to="/register">Registration</Link>
+    <Link to="https://forms.gle/VEKdtDL7r3qp52fC6">Registration</Link>
     {/* <Link to="/program">Programme Schedule</Link> */}
     </div>
 
     <div className='nav-two'>
-    <Link to="/contact">Contact Us</Link>
 
     <div className="dropdown"><span>About</span>
     <div>

@@ -14,10 +14,11 @@ export default function(){
             </div>
             <div className='flexbox-column'>
                 <h3>Contact Us</h3>
-                <Link to="http://kdkce.in">Website</Link>
-                <Link to="mailto:ritishdas116@gmail.com">Email</Link>
-                <b>Mr. Bhushan Bawankar</b>
-                <b>Phone: +91-9146033004</b>
+                <Link to="https://www.kdkce.edu.in/">Website</Link>
+                <Link to="mailto: kartik.ingole@kdkce.edu.in ">Email</Link>
+
+                <b>Prof. k.K Ingole</b>
+                <b>Phone: +91-85549 25786</b>
                 </div>
         </div>
         <p>Copyright © ETRCEE-25 - All Rights Reserved</p>

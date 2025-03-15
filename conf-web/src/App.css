@@ -220,7 +220,6 @@ footer {
   background: linear-gradient(to bottom, var(--seperator), var(--button));
   border-top: 2px solid var(--hover);
   padding: 1rem;
-  margin-top: 50vh;
 }
 footer > div {
   width: 100%;
