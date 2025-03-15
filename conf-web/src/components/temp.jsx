@@ -41,7 +41,7 @@ const advisoryBoard = [
     
 ];
 
-const organisingBoard = [
+const organizingBoard = [
   { name: 'Prof. S. S. Ganorkar ', title:'Asst. Professor, Department of Information Technology, KDKCE '},
   { name: 'Dr. R. Burange ', title:'Asst Prof. Department of Electronics & Tele-Comm. Engineering, KDKCE'},
    { name: 'Dr. H.V. Gorewar ', title:' Asst. Professor, Department of Information Technology, KDKCE '},
@@ -65,7 +65,7 @@ const organisingBoard = [
 
 
 ];
-
+/*
 const AdvisoryBoard = () => {
   const containerStyle = {
     background: 'linear-gradient(135deg, #32a852, #4285f4)',
@@ -151,6 +151,33 @@ const AdvisoryBoard = () => {
     </div>
   );
 };
+*/
+
+function AdvisoryBoard(){
+return(
+<div className="advdiv flexbox-column">
+  <div className="flexbox">
+{advisoryBoard.map((a,ind)=>{
+  return(
+<div key={ind} className="flexbox-column">
+<h1>{a.name}</h1>
+    <i>{a.title}</i>
+    </div>
+  )})}
+  </div>
+  <div className="flexbox">
+{organizingBoard.map((a,ind)=>{
+  return(
+<div key={ind} className="flexbox-column">
+<h1>{a.name}</h1>
+    <i>{a.title}</i>
+    </div>
+  )})}
+  </div>
+  </div>
+  );
+
+}
 
 export default AdvisoryBoard;
 
