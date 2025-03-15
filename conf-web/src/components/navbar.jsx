@@ -20,7 +20,7 @@ export default function () {
     <div>
     <Link to="/call_for_Papers">Call for Paper</Link>
     <Link to="/about">Important Dates</Link>
-    <Link to="/">Paper Submission</Link>
+    <Link to="https://forms.gle/VEKdtDL7r3qp52fC6">Paper Submission</Link>
     </div>
     </div>
 
