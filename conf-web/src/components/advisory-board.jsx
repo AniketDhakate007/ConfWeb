@@ -65,7 +65,7 @@ const organizingBoard = [
 
 
 ];
-
+/*
 const AdvisoryBoard = () => {
   return (
     <motion.div
@@ -206,5 +206,32 @@ const AdvisoryBoard = () => {
     </motion.div>
   );
 };
+*/
+
+function AdvisoryBoard(){
+return(
+<div className="advdiv flexbox-column">
+  <div className="flexbox">
+{advisoryBoard.map((a,ind)=>{
+  return(
+<div key={ind} className="flexbox-column">
+<h1>{a.name}</h1>
+    <i>{a.title}</i>
+    </div>
+  )})}
+  </div>
+  <div className="flexbox">
+{organizingBoard.map((a,ind)=>{
+  return(
+<div key={ind} className="flexbox-column">
+<h1>{a.name}</h1>
+    <i>{a.title}</i>
+    </div>
+  )})}
+  </div>
+  </div>
+  );
+
+}
 
 export default AdvisoryBoard;
