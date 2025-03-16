@@ -309,6 +309,9 @@ border-radius:10px;
 .home-accre{
   margin:100px 0;
 }
+.home-accre h1{
+text-align:center;
+}
 .home-accre>div>div{
 width:300px;
 padding:0.5rem;
