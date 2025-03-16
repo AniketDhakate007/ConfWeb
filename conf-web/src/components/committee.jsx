@@ -34,13 +34,13 @@ const committees = {
   ],
 
   'Organinsing Secretary': [
-    { name: 'Dr. A. Bhange', title: 'Head, Department of Computer Application, KDKCE' },
-    { name: 'Prof. V. Surjuse', title: 'Asst. Professor, Department of Computer Science & Engg. KDKCE' },
+    { name: 'Dr. A.D. Bhange', title: 'Head, Department of Computer Application, KDKCE' },
+    { name: 'Prof. V.R. Surjuse', title: 'Asst. Professor, Department of Computer Science & Engg. KDKCE' },
   ],
   'Joint Organizing Secretary': [
-    { name: 'Prof. S. Kurzadkar', title: 'Asst. Professor, Department of Computer Science & Engg. KDKCE' },
-    { name: 'Prof K.Ingole', title: 'Asst. Professor, Department of Artificial Intelligence & Data Science, KDKCE' },
-    { name: 'Prof. A. Nachankar', title: 'Asst. Professor, Department of Computer Science & Engg. KDKCE' }
+    { name: 'Prof. S.A. Kurzadkar', title: 'Asst. Professor, Department of Computer Science & Engg. KDKCE' },
+    { name: 'Prof K.K.Ingole', title: 'Asst. Professor, Department of Artificial Intelligence & Data Science, KDKCE' },
+    { name: 'Prof. A.P. Nachankar', title: 'Asst. Professor, Department of Computer Science & Engg. KDKCE' }
   ]
 
 };
