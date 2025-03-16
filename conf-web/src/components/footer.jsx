@@ -17,7 +17,7 @@ export default function(){
                 <Link to="https://www.kdkce.edu.in/">Website</Link>
                 <Link to="mailto: kartik.ingole@kdkce.edu.in ">Email</Link>
 
-                <b>Prof. k.K Ingole</b>
+                <b>Prof. K.K Ingole</b>
                 <b>Phone: +91-85549 25786</b>
                 </div>
         </div>
