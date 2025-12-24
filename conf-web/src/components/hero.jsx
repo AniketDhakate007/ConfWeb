@@ -5,7 +5,7 @@ export default function(){
         <div className="hero flexbox-spacearound">
             <div className="flexbox-column flexbox">
 <h1>
-International Conference on Emerging Trends and Research in Computer & Electronics Exigencies - 2025
+International Conference on Emerging Trends and Research in Computer & Electronics Exigencies - 2026
             </h1>
             <p>
 Organized by Department of Computer Science and Engineering & Artificial Intelligence and Data Science, KDKCE ,Nagpur.
@@ -16,7 +16,7 @@ Organized by Department of Computer Science and Engineering & Artificial Intelli
             </div>
             </div>
 <h1>
-ETRCEE-25
+ETRCEE-2026
 </h1>
 </div>
     )

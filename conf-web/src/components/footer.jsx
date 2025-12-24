@@ -4,7 +4,7 @@ export default function(){
     return(
     <footer className="flexbox-column flexbox-spacearound">
         <div className="flexbox-spacearound">
-            <h1>ETRCEE-25</h1>
+            <h1>ETRCEE-2026</h1>
             <div className='flexbox-column'>
                 <h3>Useful Links</h3>
                 <Link to="/">Home</Link>
@@ -14,14 +14,12 @@ export default function(){
             </div>
             <div className='flexbox-column'>
                 <h3>Contact Us</h3>
-                <Link to="https://www.kdkce.edu.in/">Website</Link>
-                <Link to="mailto: kartik.ingole@kdkce.edu.in ">Email</Link>
 
                 <b>Prof. K.K Ingole</b>
                 <b>Phone: +91-85549 25786</b>
                 </div>
         </div>
-        <p>Copyright © ETRCEE-25 - All Rights Reserved</p>
+        <p>Copyright © ETRCEE-2026 - All Rights Reserved</p>
     </footer>
     )
 }

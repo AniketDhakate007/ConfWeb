@@ -2,10 +2,10 @@ import React from 'react';
 import { motion } from 'framer-motion';
 
 const importantDates = [
-  { event: 'Full Length Paper Submission', date: '5th March 2025' },
-  { event: 'Intimation of Paper Acceptance', date: '11th March 2025' },
-  { event: 'Camera Ready Paper Submission', date: '17th March 2025' },
-  { event: 'Registration Deadline', date: '1st April 2025' }
+  { event: 'Full Length Paper Submission', date: '30th December 2025' },
+  { event: 'Intimation of Paper Acceptance', date: '2nd January 2026' },
+  { event: 'Camera ready paper submission', date: '6th January 2026' },
+  { event: 'Fees & Registration Deadline', date: '8th January 2026' }
 ];
 
 const ImportantDates = () => {

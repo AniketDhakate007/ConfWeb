@@ -34,7 +34,7 @@ const advisoryBoard = [
 { name: 'Dr. S. S. Ambekar ', title:'Head, Deptt. Of Electrical Engineering '},
 { name: 'Dr. P. D. Khandait ', title:'Head Deptt. Of Electronics & Telecommunication '},
 { name: 'Dr. S.P. Khandait ', title:'Head Deptt. Of Information Technology '},
-{ name: 'Dr. S. Ikhar ', title:'Head, Deptt. Of Mechanical Engineering '},
+{ name: 'Dr. S.R. Ikhar ', title:'Head, Deptt. Of Mechanical Engineering '},
 { name: 'Dr. G.H. Agrawal', title:'Incharge, Dept. of Basic science & Humanities '},
 { name: 'Prof. Budhe ', title:'Head, Deptt. Of Business Administration '},
 
@@ -42,116 +42,26 @@ const advisoryBoard = [
 ];
 
 const organisingBoard = [
-  { name: 'Prof. S. S. Ganorkar ', title:'Asst. Professor, Department of Information Technology, KDKCE '},
-  { name: 'Dr. R. Burange ', title:'Asst Prof. Department of Electronics & Tele-Comm. Engineering, KDKCE'},
-   { name: 'Dr. H.V. Gorewar ', title:' Asst. Professor, Department of Information Technology, KDKCE '},
-   { name: 'Prof. Y. D. Choudhari ', title:'Asst. Professor, Department of Information Technology, KDKCE '},
-   { name: 'Dr. J. Gawai ', title:'Asst Prof. Department of Electronics & Tele-Comm. Engineering, KDKCE '},
-   { name: 'Er. R.B. Khule ', title:'Asst.Prof. Department of Electronics & Tele-Comm. Engineering, KDKCE '},
-   { name: 'Er. V.M. Mahawadiwar ', title:'Department of Electronics & Tele-Comm. Engineering, KDKCE '},
-   { name: 'Er. S.A. Bagal ', title:'Asst.Prof., Department of Electronics & Tele-Comm. Engineering, KDKCE '},
-   { name: 'Dr. P.M.Shende ', title:'Asst Prof. Department of Electronics & Tele-Comm.Engineering,KDKCE '},
-   { name: 'Prof. R. Kolte ', title:'Asst. Prof. Department of Information Technology, KDKCE '},
-   { name: 'Prof. P. A. Gharad ', title:'Asst. Professor, Department of Computer Science & Engg. KDKCE '},
-   { name: 'Er. Sachin Verma ', title:'Asst. Professor, Department of Computer Science & Engg. KDKCE '},
-   { name: 'Er. S.S. Chahande ', title:'Asst. Professor, Department of Computer Science & Engg. KDKCE '},
-   { name: 'Er. D.W. Wanjari ', title:'Asst. Professor, Department of Computer Science & Engg. KDKCE '},
-   { name: 'Er. S A Satone ', title:'Asst. Professor, Department of Computer Science & Engg. KDKCE '},
-   { name: 'Er. T.H. Mankar ', title:'Asst. Professor, Department of Computer Science & Engg. KDKCE '},
-   { name: 'Er. N. C. Nayak ', title:'Asst. Professor, Department of Computer Science & Engg. KDKCE '},
-   { name: 'Er. M.R. Chaudhari', title:'Asst. Professor, Department of Computer Science & Engg. KDKCE '},
-   { name: 'Er. P.C. Patil ', title:'Asst. Professor, Department of Computer Science & Engg. KDKCE '},
-   { name: 'Er. P. S. Nagmote ', title:'Asst. Professor, Department of Computer Science & Engg. KDKCE '},
 
+  { name: 'Prof. S. A. Kurzadkar ', title:'Asst. Professor, Department of Computer Science & Engg. KDKCE '},
+  { name: 'Prof. K. K. Ingole ', title:'Asst. Professor, Department of AI&DS. KDKCE '},
+  { name: 'Prof. A. P. Nachankar ', title:'Asst. Professor, Department of Computer Science & Engg. KDKCE '},
+  { name: 'Dr. A. D. Bhange ', title:'Head of Department of Computer Applications , KDKCE '},
+   { name: 'Prof. V. R. Surjuse ', title:'Asst. Professor, Department of Computer Science & Engg. KDKCE '},
+   { name: 'Prof. P. A. Kuchewar ', title:'Asst. Professor, Department of Computer Science & Engg. KDKCE '},
+   { name: 'Er. Sachin Verma ', title:'Asst. Professor, Department of Computer Science & Engg. KDKCE '},
+   { name: 'Prof. P. A. Gharad ', title:'Asst. Professor, Department of Computer Science & Engg. KDKCE '},
+   { name: 'Er. S. S. Chahande ', title:'Asst. Professor, Department of Computer Science & Engg. KDKCE '},
+   { name: 'Er. D. W. Wanjari ', title:'Asst. Professor, Department of Computer Science & Engg. KDKCE '},
+   { name: 'Er. S. A. Satone ', title:'Asst. Professor, Department of Computer Science & Engg. KDKCE '},
+   { name: 'Mrs. Minal Choudhari ', title:'Asst. Professor,Department of AI&DS. KDKCE '},
+   { name: 'Mrs. Minal Thawakar ', title:'Asst. Professor, Department of AI&DS. KDKCE '},
+   { name: 'Mrs. Pooja Babare ', title:'Asst. Professor, Department of AI&DS. KDKCE '},
+   { name: 'Mrs. Sneha Kullarkar ', title:'Asst. Professor, Department of AI&DS. KDKCE'},
+  
 
 ];
-/*
-const AdvisoryBoard = () => {
-  const containerStyle = {
-    background: 'linear-gradient(135deg, #32a852, #4285f4)',
-    minHeight: '100vh',
-    padding: '4rem 2rem',
-    display: 'flex',
-    flexDirection: 'column',
-    alignItems: 'center',
-  };
 
-  const titleStyle = {
-    color: '#000',
-    fontSize: '2.5rem',
-    marginBottom: '1.5rem',
-    fontFamily: 'Montserrat',
-    textAlign: 'center',
-  };
-
-  const boardContainerStyle = {
-    display: 'grid',
-    gridTemplateColumns: 'repeat(auto-fit, minmax(275px, 1fr))',
-    gap: '2rem',
-    width: '100%',
-    maxWidth: '1400px',
-  };
-
-  const cardStyle = {
-    background: 'rgba(255, 255, 255, 0.15',
-    borderRadius: '20px',
-    padding: '1.5rem',
-    boxShadow: '0px 10px 30px rgba(0,0,0,0.2)',
-    cursor: 'pointer',
-    fontFamily: 'Montserrat',
-    textAlign: 'center',
-    transition: 'transform 0.1s ease-in-out',
-    minHeight: '450px',
-    display: 'flex',
-    flexDirection: 'column',
-    justifyContent: 'center',
-    wordBreak: 'break-word',
-  };
-
-  const nameStyle = {
-    fontSize: '1.5rem',
-    marginBottom: '0.5rem',
-    color: '#fff',
-  };
-
-  const designationStyle = {
-    fontSize: '1.1rem',
-    fontWeight: 'bold',
-    color: '#333',
-  };
-
-  return (
-    <div style={containerStyle}>
-      <h1 style={titleStyle}>Advisory Board</h1>
-      <div style={boardContainerStyle}>
-        {advisoryBoard.map((member, index) => (
-          <motion.div
-            key={index}
-            whileHover={{ scale: 1.05 }}
-            style={cardStyle}
-          >
-            <h2 style={nameStyle}>{member.name}</h2>
-            <p style={designationStyle}>{member.title}</p>
-          </motion.div>
-        ))}
-      </div>
-      <h1 style={{ ...titleStyle, marginTop: '3rem' }}>Organising Board</h1>
-      <div style={boardContainerStyle}>
-        {organisingBoard.map((member, index) => (
-          <motion.div
-            key={index}
-            whileHover={{ scale: 1.05 }}
-            style={cardStyle}
-          >
-            <h2 style={nameStyle}>{member.name}</h2>
-            <p style={designationStyle}>{member.title}</p>
-          </motion.div>
-        ))}
-      </div>
-    </div>
-  );
-};
-*/
 function AdvisoryBoard(){
 
  const containerStyle = {
@@ -222,7 +132,7 @@ function AdvisoryBoard(){
           </motion.div>
         ))}
       </div>
-      <h1 style={{ ...titleStyle, marginTop: '3rem' }}>Organising Board</h1>
+      <h1 style={{ ...titleStyle, marginTop: '3rem' }}>Organizing Board</h1>
       <div style={boardContainerStyle}>
         {organisingBoard.map((member, index) => (
           <motion.div

@@ -7,21 +7,21 @@ const committees = {
     { name: 'Mrs. Sumanmala B. Mulak', title: 'Chairperson, BCYRC, Nagpur' }
   ],
   'Patrons': [
-    { name: 'Mr. Rajendra B. Mulak', title:'BCYRC, Ex- Minister, Govt of Maharashtra' },
-    { name: 'Mr. Yashraj R. Mulak', title: 'Treasurer, BCYRC' },
+    { name: 'Shri. Rajendra B. Mulak', title:'Ex- Minister, Govt of Maharashtra, Secretary BCYRC, Nagpur' },
+    { name: 'Shri. Yashraj R. Mulak', title: 'Treasurer BCYRC Nagpur' },
     { name: 'Dr. V. P. Varghese', title: 'Principal, KDK College of Engineering, Nagpur' },
 
   ],
   'Conference Chair': [
-    { name: 'Dr. A. M. Badar', title: 'Vice- Principal, KDK College of Engineering. Nagpur.' }
+    { name: 'Dr. A. M. Badar', title: 'Vice- Principal, KDK College of Engineering, Nagpur' }
   ],
-  'Co-Conference Chair': [
+  'Conference Co-Chair': [
     
-    { name: 'Er.Satish Raipure', title: 'Chairman, Institution of Engineers (I) Nagpur Local Centre' },
+    { name: 'Dr. Sandeep Shirkhedkar', title: 'Chairman, Institution of Engineers (I) Nagpur Local Centre' },
     { name: 'Dr. V.H. Mankar', title: 'President, IETE Nagpur Local Chapter' }
   ],
   'Convener': [
-    { name: 'Dr. A.A. Jaiswal', title: 'Professor & Head, Department of Computer Science & Engineering, KDKCE' },
+    { name: 'Dr. A.A. Jaiswal', title: 'Head, Department of Computer Science & Engineering, KDKCE' },
     { name: 'Dr. S. M. Malode', title: 'Head, Department of Artificial Intelligence & Data Science, KDKCE' },
     
 
@@ -33,19 +33,21 @@ const committees = {
    
   ],
 
-  'Organinsing Secretary': [
-    { name: 'Dr. A.D. Bhange', title: 'Head, Department of Computer Application, KDKCE' },
-    { name: 'Prof. V.R. Surjuse', title: 'Asst. Professor, Department of Computer Science & Engg. KDKCE' },
-  ],
-  'Joint Organizing Secretary': [
+  'Joint Secretary': [
     { name: 'Prof. S.A. Kurzadkar', title: 'Asst. Professor, Department of Computer Science & Engg. KDKCE' },
     { name: 'Prof K.K.Ingole', title: 'Asst. Professor, Department of Artificial Intelligence & Data Science, KDKCE' },
     { name: 'Prof. A.P. Nachankar', title: 'Asst. Professor, Department of Computer Science & Engg. KDKCE' }
-  ]
+  ],
+  'Organizing Secretary': [
+    { name: 'Prof. V.R. Surjuse', title: 'Asst. Professor, Department of Computer Science & Engg. KDKCE' },
+    { name: 'Dr. A.D. Bhange', title: 'Head, Department of Computer Application, KDKCE' },
+    { name: 'Prof. P.A. Kuchewar', title: 'Head, Department of Computer Application, KDKCE' },
+
+  ],
 
 };
 
-const Committees = () => {
+const Committee = () => {
   const containerStyle = {
     background: 'linear-gradient(135deg, #32a852, #4285f4)',
     minHeight: '100vh',
@@ -110,7 +112,7 @@ const Committees = () => {
 
   return (
     <div style={containerStyle}>
-      <h1 style={titleStyle}>Committees</h1>
+      <h1 style={titleStyle}>Committee</h1>
       {Object.entries(committees).map(([section, members], idx) => (
         <div key={idx} style={{ width: '100%', maxWidth: '1400px' }}>
           <h2 style={sectionTitleStyle}>{section}</h2>
@@ -132,4 +134,4 @@ const Committees = () => {
   );
 };
 
-export default Committees;
+export default Committee;

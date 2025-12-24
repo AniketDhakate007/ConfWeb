@@ -1,7 +1,5 @@
 import { Link } from "react-router-dom";
 
-
-
 export default function () {
   return (
 
@@ -13,18 +11,18 @@ export default function () {
     <div className='nav-one'>
     <Link to="/">Home</Link>
     <Link to="/advboard">Advisory Board</Link>
-    <Link to="/commitee">Committees</Link>
+    <Link to="/commitee">Committee</Link>
 
     {/* <Link to="/kspeaker">Keynote Speakers</Link> */}
     <div className="dropdown"><span>For Authors</span>
     <div>
     <Link to="/call_for_Papers">Call for Paper</Link>
     <Link to="/imp_dates">Important Dates</Link>
-    <Link to="https://forms.gle/VEKdtDL7r3qp52fC6">Paper Submission</Link>
+    <Link to="https://forms.gle/gBK9KuqqzfFfpdip8">Paper Submission</Link>
     </div>
     </div>
 
-    <Link to="https://forms.gle/VEKdtDL7r3qp52fC6">Registration</Link>
+    <Link to="https://forms.gle/gBK9KuqqzfFfpdip8">Registration</Link>
     {/* <Link to="/program">Programme Schedule</Link> */}
     </div>
 
