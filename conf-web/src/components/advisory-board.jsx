@@ -55,10 +55,7 @@ const organisingBoard = [
    { name: 'Er. D. W. Wanjari ', title:'Asst. Professor, Department of Computer Science & Engg. KDKCE '},
    { name: 'Er. S. A. Satone ', title:'Asst. Professor, Department of Computer Science & Engg. KDKCE '},
    { name: 'Mrs. Minal Choudhari ', title:'Asst. Professor,Department of AI&DS. KDKCE '},
-   { name: 'Mrs. Minal Thawakar ', title:'Asst. Professor, Department of AI&DS. KDKCE '},
-   { name: 'Mrs. Pooja Babare ', title:'Asst. Professor, Department of AI&DS. KDKCE '},
-   { name: 'Mrs. Sneha Kullarkar ', title:'Asst. Professor, Department of AI&DS. KDKCE'},
-  
+     
 
 ];
 
