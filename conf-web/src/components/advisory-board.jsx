@@ -32,11 +32,11 @@ const advisoryBoard = [
 { name: 'Dr. S.M. Gulhane ', title:'Principal, PREC, Loni '},
 { name: 'Dr. S.R. Satone  ', title:'Head, Deptt. Of Civil Engineering '},
 { name: 'Dr. S. S. Ambekar ', title:'Head, Deptt. Of Electrical Engineering '},
-{ name: 'Dr. P. D. Khandait ', title:'Head Deptt. Of Electronics & Telecommunication '},
-{ name: 'Dr. S.P. Khandait ', title:'Head Deptt. Of Information Technology '},
-{ name: 'Dr. S.R. Ikhar ', title:'Head, Deptt. Of Mechanical Engineering '},
+{ name: 'Dr. J. S. Gawai ', title:'Head Deptt. Of Electronics & Telecommunication '},
+{ name: 'Dr. S. P. Khandait ', title:'Head Deptt. Of Information Technology '},
+{ name: 'Dr. A. V. Vanalkar ', title:'Head, Deptt. Of Mechanical Engineering '},
 { name: 'Dr. G.H. Agrawal', title:'Incharge, Dept. of Basic science & Humanities '},
-{ name: 'Prof. Budhe ', title:'Head, Deptt. Of Business Administration '},
+{ name: 'Prof. R. S. Budhe ', title:'Head, Deptt. Of Business Administration '},
 
     
 ];
