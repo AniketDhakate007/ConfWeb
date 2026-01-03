@@ -11,7 +11,7 @@ International Conference on Emerging Trends and Research in Computer & Electroni
 Organized by Department of Computer Science and Engineering & Artificial Intelligence and Data Science, KDKCE ,Nagpur.
             </p>
             <div className="flexbox hero-button">
-                <button onClick={()=>{window.location.href="https://docs.google.com/forms/d/e/1FAIpQLSeji9KQeiD0CggrfMlYOm6Ae3lJGdkstgIkvLpOom8LchyQMA/viewform?usp=header"}}>Register</button>
+                <button onClick={()=>{window.location.href="https://forms.gle/gBK9KuqqzfFfpdip8"}}>Register</button>
                 <span onClick={()=>{window.location.href="https://www.kdkce.edu.in/"}}>Learn more</span>
             </div>
             </div>
